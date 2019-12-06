@@ -1,0 +1,43 @@
+#########################################################################################################
+##	This is an example .gitignore file for Vivado, please treat it as an example as 
+##	it might not be complete. In addition, XAPP 1165 should be followed.
+#########################################################################################################
+#########
+#Exclude all
+#########
+*
+!*/
+!.gitignore
+
+# constraints
+!constraints/*.xdc
+
+# rtl
+!rtl/*.sv
+!rtl/*.v
+!rtl/mmcm/*.xci
+!rtl/apb_gpio
+!rtl/lint_bridge/*.sv
+!rtl/lint_bridge/*.v
+
+# script
+!script/Makefile
+!script/vivado.tcl
+
+# software
+!software/led/*.S
+!software/led/*.c
+!software/led/*.ld
+!software/led/Makefile
+
+!software/gpio/*.S
+!software/gpio/*.c
+!software/gpio/*.ld
+!software/gpio/Makefile
+
+# testbench
+!testbench/*.sv
+!testbench/*.v
+
+# vivado_build
+vivado_build/

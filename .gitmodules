@@ -1,0 +1,3 @@
+[submodule "rtl/apb_gpio"]
+	path = rtl/apb_gpio
+	url = git@github.com:Starrynightzyq/apb_gpio.git
