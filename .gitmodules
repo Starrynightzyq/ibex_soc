@@ -1,3 +1,9 @@
 [submodule "rtl/apb_gpio"]
 	path = rtl/apb_gpio
 	url = git@github.com:Starrynightzyq/apb_gpio.git
+[submodule "rtl/apb_uart_sv"]
+	path = rtl/apb_uart_sv
+	url = git@github.com:Starrynightzyq/apb_uart_sv
+[submodule "rtl/axi2apb"]
+	path = rtl/axi2apb
+	url = git@github.com:Starrynightzyq/axi2apb.git

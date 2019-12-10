@@ -16,9 +16,11 @@
 !rtl/*.sv
 !rtl/*.v
 !rtl/mmcm/*.xci
-!rtl/apb_gpio
 !rtl/lint_bridge/*.sv
 !rtl/lint_bridge/*.v
+!rtl/apb_gpio
+!rtl/apb_uart_sv
+!rtl/axi2apb
 
 # script
 !script/Makefile
@@ -34,6 +36,11 @@
 !software/gpio/*.c
 !software/gpio/*.ld
 !software/gpio/Makefile
+
+!software/uart/*.S
+!software/uart/*.c
+!software/uart/*.ld
+!software/uart/Makefile
 
 # testbench
 !testbench/*.sv

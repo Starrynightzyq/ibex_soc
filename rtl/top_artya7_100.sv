@@ -8,7 +8,9 @@ module top_fpga (
     input               IO_CLK_P,
     input               IO_CLK_N,
     input               IO_RST_P,
-    (*mark_debug ="true"*)output [3:0]        LED
+
+    (*mark_debug ="true"*)input  logic        uart_rx_i,
+    (*mark_debug ="true"*)output logic        uart_tx_o
 );
 
   // parameter int          MEM_SIZE  = 64 * 1024; // 64 kB
@@ -48,6 +50,7 @@ module top_fpga (
       .clk         (clk_sys),
       .rst_n       (rst_sys_n),
 
+      // core data interface
       .peri_addr   (peri_addr),
       .peri_req    (peri_req),
       .peri_write  (peri_write),
@@ -56,7 +59,11 @@ module top_fpga (
       .peri_gnt    (peri_gnt),
 
       .peri_rvalid (peri_rvalid),
-      .peri_rdata  (peri_rdata)
+      .peri_rdata  (peri_rdata),
+
+      // uart
+      .uart_0_rx_i(uart_rx_i),
+      .uart_0_tx_o(uart_tx_o)
     );
 
   // Clock and reset

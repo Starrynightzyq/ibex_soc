@@ -44,6 +44,14 @@ module complex_core (
   logic        instr_mem_rvalid;
   logic [31:0] instr_mem_rdata;
 
+  logic [31:0] instr_mem_addr_1;
+  logic        instr_mem_req_1;
+  logic        instr_mem_write_1;
+  logic  [3:0] instr_mem_be_1;
+  logic [31:0] instr_mem_wdata_1;
+  logic        instr_mem_rvalid_1;
+  logic [31:0] instr_mem_rdata_1;
+
   // data RAM arbiter
   logic [31:0] data_mem_addr;
   logic        data_mem_req;
@@ -106,6 +114,12 @@ module complex_core (
     instr_mem_be         = 4'b0;
     instr_mem_wdata      = 32'b0;
 
+    instr_mem_req_1      = 1'b0;
+    instr_mem_addr_1     = 32'b0;
+    instr_mem_write_1    = 1'b0;
+    instr_mem_be_1       = 4'b0;
+    instr_mem_wdata_1    = 32'b0;
+
     data_mem_req         = 1'b0;
     data_mem_addr        = 32'b0;
     data_mem_write       = 1'b0;
@@ -130,6 +144,9 @@ module complex_core (
       data_mem_addr       = data_addr - (`DTCM_START);
       data_mem_wdata      = data_wdata;
 
+      instr_mem_req_1     = (data_addr & ~`ITCM_MASK) == `ITCM_START;
+      instr_mem_addr_1    = data_addr - (`ITCM_START);
+
       peri_req            = (data_addr & ~`PERI_MASK) == `PERI_START;
       peri_write          = data_we;
       peri_be             = data_be;
@@ -139,7 +156,7 @@ module complex_core (
   end
 
   // SRAM block for instruction and data storage
-  ram_1p #(
+  ram_2p #(
     .Depth(`ITCM_SIZE / 4)
   ) instr_ram (
     .clk_i     ( clk              ),
@@ -150,7 +167,13 @@ module complex_core (
     .addr_i    ( instr_mem_addr   ),
     .wdata_i   ( 32'b0            ),
     .rvalid_o  ( instr_mem_rvalid ),
-    .rdata_o   ( instr_mem_rdata  )
+    .rdata_o   ( instr_mem_rdata  ),
+
+    // itcm read data port 2
+    .req_i_1   (instr_mem_req_1),
+    .addr_i_1  (instr_mem_addr_1),
+    .rdata_o_1 (instr_mem_rdata_1),
+    .rvalid_o_1(instr_mem_rvalid_1)
   );
 
 
@@ -178,7 +201,9 @@ module complex_core (
   	data_rdata = 32'h0;
   	if (data_mem_rvalid) begin
   		data_rdata = data_mem_rdata;
-  	end else if (peri_rvalid) begin
+    end else if (instr_mem_rvalid_1) begin
+      data_rdata = instr_mem_rdata_1;
+    end else if (peri_rvalid) begin
   		data_rdata = peri_rdata;
   	end
   end
@@ -188,8 +213,8 @@ module complex_core (
 	  	data_rvalid = 'b0;
 	    data_gnt    = 'b0;
   	end else begin 
-	  	data_rvalid = data_mem_rvalid || peri_rvalid;
-	    data_gnt    = data_mem_rvalid || peri_gnt;
+	  	data_rvalid = data_mem_rvalid || instr_mem_rvalid_1 || peri_rvalid;
+	    data_gnt    = data_mem_rvalid || instr_mem_rvalid_1 || peri_gnt;
   	end
   end
 

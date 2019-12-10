@@ -34,19 +34,23 @@ module tb_top_fpga (); /* this is automatically generated */
 	// logic       IO_CLK_P;
 	// logic       IO_CLK_N;
 	// logic       IO_RST_P;
-	logic [3:0] LED;
+	// logic [3:0] LED;
 
 	top_fpga inst_top_fpga (
 			.IO_CLK_P (clk),
 			.IO_CLK_N (~clk),
-			.IO_RST_P (srst),
-			.LED      (LED)
+			.IO_RST_P (srst)
 		);
 
 	initial begin
 		// do something
 
+		// repeat(500)@(posedge clk);
+		// srst <= '1;
 		// repeat(10)@(posedge clk);
+		// srst <= '0;
+
+
 		// $finish;
 	end
 /*

@@ -15,7 +15,10 @@ module peripherals (
 	output logic        peri_gnt,
 
 	output logic        peri_rvalid,
-	output logic [31:0] peri_rdata
+	output logic [31:0] peri_rdata,
+
+	input  logic        uart_0_rx_i,
+	output logic        uart_0_tx_o
 );
 
     parameter ADDR_WIDTH     = 32;
@@ -103,7 +106,7 @@ module peripherals (
 			.master_0_PSLVERR (master_0_PSLVERR)
 		);
 
-
+/*
 	apb_gpio #(
 			.APB_ADDR_WIDTH(12),
 			.PAD_NUM(32)
@@ -129,6 +132,25 @@ module peripherals (
 			.gpio_padcfg     (gpio_padcfg),
 
 			.interrupt       (interrupt)
+		);
+*/		
+
+	apb_uart_sv #(
+			.APB_ADDR_WIDTH(12) // APB slaves are 4KB by default
+		) inst_apb_uart_0 (
+			.CLK     (clk),
+			.RSTN    (rst_n),
+			.PADDR   (master_0_PADDR),
+			.PWDATA  (master_0_PWDATA),
+			.PWRITE  (master_0_PWRITE),
+			.PSEL    (master_0_PSEL),
+			.PENABLE (master_0_PENABLE),
+			.PRDATA  (master_0_PRDATA),
+			.PREADY  (master_0_PREADY),
+			.PSLVERR (master_0_PSLVERR),
+			.rx_i    (uart_0_rx_i),
+			.tx_o    (uart_0_tx_o),
+			.event_o (uart_0_interrupt)
 		);
 
 

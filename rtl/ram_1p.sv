@@ -6,9 +6,9 @@
  * Single-port RAM with 1 cycle read/write delay, 32 bit words
  */
 
-`define SRAM_INIT_FILE gpio.vmem
+`define SRAM_INIT_FILE uart.vmem
 
-module ram_1p #(
+module ram_2p #(
     parameter int Depth = 128
 ) (
     input               clk_i,
@@ -20,7 +20,12 @@ module ram_1p #(
     input        [31:0] addr_i,
     input        [31:0] wdata_i,
     output logic        rvalid_o,
-    output logic [31:0] rdata_o
+    output logic [31:0] rdata_o,
+
+    input               req_i_1,
+    input        [31:0] addr_i_1,
+    output logic [31:0] rdata_o_1,
+    output logic        rvalid_o_1
 );
 
   localparam int Aw = $clog2(Depth);
@@ -29,6 +34,10 @@ module ram_1p #(
 
   logic [Aw-1:0] addr_idx;
   assign addr_idx = addr_i[Aw-1+2:2];
+
+  logic [Aw-1:0] addr_idx_1;
+  assign addr_idx_1 = addr_i_1[Aw-1+2:2];
+
   logic [31-Aw:0] unused_addr_parts;
   assign unused_addr_parts = {addr_i[31:Aw+2], addr_i[1:0]};
 
@@ -50,6 +59,20 @@ module ram_1p #(
       rvalid_o <= '0;
     end else begin
       rvalid_o <= req_i;
+    end
+  end
+
+  always @(posedge clk_i) begin
+    if (req_i_1) begin
+      rdata_o_1 <= mem[addr_idx_1];
+    end
+  end
+
+  always_ff @(posedge clk_i or negedge rst_ni) begin
+    if (!rst_ni) begin
+      rvalid_o_1 <= '0;
+    end else begin
+      rvalid_o_1 <= req_i_1;
     end
   end
 

@@ -1,11 +1,11 @@
 // ITCM
-`define ITCM_SIZE (48*1024) // 48KB
-`define ITCM_START (32'h9000_0000)
+`define ITCM_SIZE (16*1024) // 16 KB
+`define ITCM_START (32'h8000_0000)
 `define ITCM_MASK (`ITCM_SIZE-1)
 
 // DTCM
-`define DTCM_SIZE (16*1024) // 16KB
-`define DTCM_START (32'h8000_0000)
+`define DTCM_SIZE (16*1024) // 16 KB
+`define DTCM_START (32'h9000_0000)
 `define DTCM_MASK (`DTCM_SIZE-1)
 
 // First instruction executed is at 0x0 + 0x80

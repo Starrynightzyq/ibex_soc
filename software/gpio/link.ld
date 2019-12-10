@@ -8,12 +8,13 @@ __DYNAMIC  =  0;
 
 MEMORY
 {
-    rom         : ORIGIN = 0x90000000, LENGTH = 0xC000 /* 48 kB */
-    stack       : ORIGIN = 0x80000000, LENGTH = 0x4000 /* 16 kB */
+    rom         : ORIGIN = 0x80000000, LENGTH = 0x4000 /* itcm 16 kB */
+    ram         : ORIGIN = 0x90000000, LENGTH = 0x4000 /* dtcm 16 kB */
+    stack       : ORIGIN = 0x90000000, LENGTH = 0x4000 /* 16 kB */
 }
 
 /* Stack information variables */
-_min_stack      = 0x2000;   /* 8K - minimum stack space to reserve */
+_min_stack      = 0x400;   /* 1K - minimum stack space to reserve */
 _stack_len     = LENGTH(stack);
 _stack_start   = ORIGIN(stack) + LENGTH(stack);
 
@@ -60,7 +61,7 @@ SECTIONS
     {
         . = ALIGN(4);
         *(.shbss)
-    } > rom
+    } > ram
 
     .data : {
         . = ALIGN(4);
@@ -70,7 +71,7 @@ SECTIONS
         *(.data.*)
         edata  =  .;
         _edata  =  .;
-    } > rom
+    } > ram
 
     .bss :
     {
@@ -82,7 +83,7 @@ SECTIONS
         *(.sbss.*)
         *(COMMON)
         _bss_end = .;
-    } > rom
+    } > ram
 
     /* ensure there is enough room for stack */
     .stack (NOLOAD): {
@@ -91,7 +92,7 @@ SECTIONS
         . = ALIGN(4);
         stack = . ;
         _stack = . ;
-    } > stack
+    } > ram
 
     .stab  0 (NOLOAD) :
     {
