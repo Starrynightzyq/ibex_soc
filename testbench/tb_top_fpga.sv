@@ -6,6 +6,8 @@ module tb_top_fpga (); /* this is automatically generated */
 	logic rstb;
 	logic srst;
 	logic clk;
+	logic uart_rx_i;
+	logic uart_tx_o;
 
 	// clock
 	initial begin
@@ -39,12 +41,15 @@ module tb_top_fpga (); /* this is automatically generated */
 	top_fpga inst_top_fpga (
 			.IO_CLK_P (clk),
 			.IO_CLK_N (~clk),
-			.IO_RST_P (srst)
+			.IO_RST_P (srst),
+			.uart_rx_i(uart_rx_i),
+			.uart_tx_o(uart_tx_o)
 		);
+
+	assign uart_rx_i = uart_tx_o;
 
 	initial begin
 		// do something
-
 		// repeat(500)@(posedge clk);
 		// srst <= '1;
 		// repeat(10)@(posedge clk);

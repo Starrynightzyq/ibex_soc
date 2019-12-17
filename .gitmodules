@@ -7,3 +7,6 @@
 [submodule "rtl/axi2apb"]
 	path = rtl/axi2apb
 	url = git@github.com:Starrynightzyq/axi2apb.git
+[submodule "rtl/micro_uart"]
+	path = rtl/micro_uart
+	url = git@github.com:Starrynightzyq/microuart.git

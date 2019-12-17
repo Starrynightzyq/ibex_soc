@@ -3,6 +3,7 @@
 
 module peripherals (
 	input clk,    // Clock
+	input ref_clock, // uart ref clk
 	// input clk_en, // Clock Enable
 	input rst_n,  // Asynchronous reset active low
 	
@@ -44,6 +45,8 @@ module peripherals (
 	logic [DATA_WIDTH-1:0]     master_0_PRDATA ;
 	logic                      master_0_PREADY ;
 	logic                      master_0_PSLVERR;
+
+	(*mark_debug ="true"*)logic uart_0_interrupt;
 
 
 	lint_2_apb #(
@@ -134,7 +137,7 @@ module peripherals (
 			.interrupt       (interrupt)
 		);
 */		
-
+/*
 	apb_uart_sv #(
 			.APB_ADDR_WIDTH(12) // APB slaves are 4KB by default
 		) inst_apb_uart_0 (
@@ -151,6 +154,24 @@ module peripherals (
 			.rx_i    (uart_0_rx_i),
 			.tx_o    (uart_0_tx_o),
 			.event_o (uart_0_interrupt)
+		);
+*/
+	micro_uart3_apb inst_micro_uart_0
+		(
+			.clk         (clk),
+			.reset_n     (rst_n),
+			.ref_clock   (ref_clock),
+			.apb_paddr   (master_0_PADDR),
+			.apb_pwdata  (master_0_PWDATA),
+			.apb_pwrite  (master_0_PWRITE),
+			.apb_psel    (master_0_PSEL),
+			.apb_penable (master_0_PENABLE),
+			.apb_prdata  (master_0_PRDATA),
+			.apb_pready  (master_0_PREADY),
+			.apb_pslverr (master_0_PSLVERR),
+			.irq         (uart_0_interrupt),
+			.ser_in      (uart_0_rx_i),
+			.ser_out     (uart_0_tx_o)
 		);
 
 

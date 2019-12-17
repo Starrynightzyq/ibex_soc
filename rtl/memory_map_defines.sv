@@ -1,10 +1,10 @@
 // ITCM
-`define ITCM_SIZE (16*1024) // 16 KB
+`define ITCM_SIZE (64*1024) // 64 KB
 `define ITCM_START (32'h8000_0000)
 `define ITCM_MASK (`ITCM_SIZE-1)
 
 // DTCM
-`define DTCM_SIZE (16*1024) // 16 KB
+`define DTCM_SIZE (64*1024) // 64 KB
 `define DTCM_START (32'h9000_0000)
 `define DTCM_MASK (`DTCM_SIZE-1)
 

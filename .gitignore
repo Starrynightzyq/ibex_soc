@@ -20,6 +20,7 @@
 !rtl/lint_bridge/*.v
 !rtl/apb_gpio
 !rtl/apb_uart_sv
+!rtl/micro_uart
 !rtl/axi2apb
 
 # script

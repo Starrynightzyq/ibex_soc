@@ -25,7 +25,7 @@ module data_ram #(
 
   localparam int Aw = $clog2(Depth);
 
-  logic [31:0] mem [Depth];
+  (* ram_style = "block" *)logic [31:0] mem [Depth];
 
   logic [Aw-1:0] addr_idx;
   assign addr_idx = addr_i[Aw-1+2:2];

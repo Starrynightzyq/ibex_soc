@@ -3,7 +3,7 @@
 
 module complex_core (
 	input clk,    // Clock
-	input rst_n,  // Asynchronous reset active low
+	(*mark_debug ="true"*)input rst_n,  // Asynchronous reset active low
 
 	// On-Chip Peripherals arbiter
 	output logic [31:0] peri_addr,
@@ -19,21 +19,21 @@ module complex_core (
 );
 
   // Instruction connection to SRAM
-  logic        instr_req;
-  logic        instr_gnt;
-  logic        instr_rvalid;
-  logic [31:0] instr_addr;
-  logic [31:0] instr_rdata;
+  (*mark_debug ="true"*)logic        instr_req;
+  (*mark_debug ="true"*)logic        instr_gnt;
+  (*mark_debug ="true"*)logic        instr_rvalid;
+  (*mark_debug ="true"*)logic [31:0] instr_addr;
+  (*mark_debug ="true"*)logic [31:0] instr_rdata;
 
   // Data connection to SRAM
-  logic        data_req;
-  logic        data_gnt;
-  logic        data_rvalid;
-  logic        data_we;
-  logic  [3:0] data_be;
-  logic [31:0] data_addr;
-  logic [31:0] data_wdata;
-  logic [31:0] data_rdata;
+  (*mark_debug ="true"*)logic        data_req;
+  (*mark_debug ="true"*)logic        data_gnt;
+  (*mark_debug ="true"*)logic        data_rvalid;
+  (*mark_debug ="true"*)logic        data_we;
+  (*mark_debug ="true"*)logic  [3:0] data_be;
+  (*mark_debug ="true"*)logic [31:0] data_addr;
+  (*mark_debug ="true"*)logic [31:0] data_wdata;
+  (*mark_debug ="true"*)logic [31:0] data_rdata;
 
   // SRAM arbiter
   logic [31:0] instr_mem_addr;
@@ -161,19 +161,23 @@ module complex_core (
   ) instr_ram (
     .clk_i     ( clk              ),
     .rst_ni    ( rst_n            ),
-    .req_i     ( instr_mem_req    ),
-    .we_i      ( 1'b0             ),
-    .be_i      ( 4'b0             ),
-    .addr_i    ( instr_mem_addr   ),
-    .wdata_i   ( 32'b0            ),
-    .rvalid_o  ( instr_mem_rvalid ),
-    .rdata_o   ( instr_mem_rdata  ),
+
+    .req_i_0     ( instr_mem_req    ),
+    .we_i_0      ( 1'b0             ),
+    .be_i_0      ( 4'b0             ),
+    .addr_i_0    ( instr_mem_addr   ),
+    .wdata_i_0   ( 32'b0            ),
+    .rdata_o_0   ( instr_mem_rdata  ),
+    .rvalid_o_0  ( instr_mem_rvalid ),
 
     // itcm read data port 2
-    .req_i_1   (instr_mem_req_1),
-    .addr_i_1  (instr_mem_addr_1),
-    .rdata_o_1 (instr_mem_rdata_1),
-    .rvalid_o_1(instr_mem_rvalid_1)
+    .req_i_1     ( instr_mem_req_1   ),
+    .we_i_1      ( 1'b0              ),
+    .be_i_1      ( 4'b0              ),
+    .addr_i_1    ( instr_mem_addr_1  ),
+    .wdata_i_1   ( 32'b0             ),
+    .rdata_o_1   ( instr_mem_rdata_1 ),
+    .rvalid_o_1  ( instr_mem_rvalid_1)
   );
 
 
@@ -219,14 +223,21 @@ module complex_core (
   end
 
   // gnt
-  always_ff @(posedge clk or negedge rst_n) begin
-    if (!rst_n) begin
-      instr_gnt    <= 'b0;
-      // data_gnt     <= 'b0;
-    end else begin
-      instr_gnt    <= instr_mem_req;
-      // data_gnt     <= data_mem_req || peri_req;
-    end
+  always_comb begin 
+  	if (!rst_n) begin
+	    instr_gnt   = 'b0;
+  	end else begin 
+	    instr_gnt   = instr_mem_rvalid;
+  	end
   end
+  // always_ff @(posedge clk or negedge rst_n) begin
+  //   if (!rst_n) begin
+  //     instr_gnt    <= 'b0;
+  //     // data_gnt     <= 'b0;
+  //   end else begin
+  //     instr_gnt    <= instr_mem_req;
+  //     // data_gnt     <= data_mem_req || peri_req;
+  //   end
+  // end
 
 endmodule

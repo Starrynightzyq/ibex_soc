@@ -17,7 +17,8 @@ module top_fpga (
   // parameter logic [31:0] MEM_START = 32'h00000000;
   // parameter [31:0] MEM_MASK  = MEM_SIZE-1;
 
-  logic clk_sys, rst_sys_n;
+  logic clk_sys, uart_ref_clk;
+  logic rst_sys_n;
 
   // On-Chip Peripherals arbiter
   logic [31:0] peri_addr;
@@ -48,6 +49,7 @@ module top_fpga (
   peripherals inst_peripherals
     (
       .clk         (clk_sys),
+      .ref_clock   (uart_ref_clk),
       .rst_n       (rst_sys_n),
 
       // core data interface
@@ -73,6 +75,7 @@ module top_fpga (
       .IO_CLK_N  (IO_CLK_N),
       .IO_RST_P  (IO_RST_P),
       .clk_sys   (clk_sys),
+      .uart_ref_clk(uart_ref_clk),
       .rst_sys_n (rst_sys_n)
     );
 

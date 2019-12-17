@@ -8,8 +8,8 @@ __DYNAMIC  =  0;
 
 MEMORY
 {
-    itcm         : ORIGIN = 0x80000000, LENGTH = 0x4000 /* itcm 16 kB */
-    ram         : ORIGIN = 0x90000000, LENGTH = 0x4000 /* dtcm 16 kB */
+    itcm         : ORIGIN = 0x80000000, LENGTH = 64K /* itcm 16 kB */
+    ram         : ORIGIN = 0x90000000, LENGTH = 64K /* dtcm 16 kB */
     /*stack       : ORIGIN = 0x90000000, LENGTH = 0x4000*/ /* 16 kB */
 }
 

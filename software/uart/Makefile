@@ -30,9 +30,29 @@ OBJDUMP = $(RISCV_PATH)/bin/$(RISCV_TOOLS_VERSION)-objdump
 # OBJCOPY ?= $(subst gcc,objcopy,$(wordlist 1,1,$(CC)))
 # OBJDUMP ?= $(subst gcc,objdump,$(wordlist 1,1,$(CC)))
 
+LIBWRAP_SYMS := write
 
-CFLAGS ?= -march=$(ARCH) -mabi=ilp32 -static -mcmodel=medany \
-	-fvisibility=hidden -nostdlib -nostartfiles $(PROGRAM_CFLAGS)
+
+CFLAGS += -g
+CFLAGS += -march=$(ARCH)
+CFLAGS += -mabi=ilp32
+# CFLAGS += -static
+CFLAGS += -mcmodel=medany
+# CFLAGS += -fvisibility=hidden
+CFLAGS += -nostartfiles
+CFLAGS +=   -ffunction-sections -fdata-sections -fno-common
+# ifeq ($(REPLACE_PRINTF),1) 
+CFLAGS +=   -fno-builtin-printf -fno-builtin-malloc 
+# endif
+CFLAGS += $(PROGRAM_CFLAGS)
+
+# CFLAGS ?= -march=$(ARCH) -mabi=ilp32 -static -mcmodel=medany \
+# 	-fvisibility=hidden -nostdlib -nostartfiles $(PROGRAM_CFLAGS)
+
+# LDFLAGS += $(foreach s,$(LIBWRAP_SYMS),-Wl,--wrap=$(s))
+LDFLAGS += --specs=nano.specs 
+# LDFLAGS += -u _printf_float # 使用浮点printf
+LDFLAGS += -Wl,--wrap=malloc -Wl,--wrap=printf 
 
 # .o 文件
 PROGRAM_OBJS := $(patsubst %.c,%.o,$(wildcard $(PROGRAM_DIR)/*.c)) $(patsubst %.S,%.o,$(wildcard $(PROGRAM_DIR)/*.S))
@@ -41,9 +61,11 @@ PROGRAM_DEPS = $(PROGRAM_OBJS:%.o=%.d)
 OUTFILES = $(PROGRAM).elf $(PROGRAM).vmem $(PROGRAM).bin $(PROGRAM).dis
 
 all: clean $(OUTFILES) show
+	python ./mem2coe.py -i $(PROGRAM)
+	cp $(PROGRAM).coe ../../rtl/instr_rom_init/instr_rom_init.coe
 
 $(PROGRAM).elf: $(PROGRAM_OBJS) $(LINKER_SCRIPT)
-	$(CC) $(CFLAGS) -T $(LINKER_SCRIPT) $(PROGRAM_OBJS) -o $@ $(LIBS)
+	$(CC) $(CFLAGS) -T $(LINKER_SCRIPT) $(PROGRAM_OBJS) -o $@ $(LDFLAGS)
 
 %.dis: %.elf
 	$(OBJDUMP) -SD $^ > $@
@@ -57,6 +79,7 @@ $(PROGRAM).elf: $(PROGRAM_OBJS) $(LINKER_SCRIPT)
 # Switching to objcopy will resolve that as well.
 %.vmem: %.bin
 	srec_cat $^ -binary -offset 0x00000000 -byte-swap 4 -o $@ -vmem
+# 	cp $(PROGRAM).vmem ../../rtl/instr_rom_init/instr_rom_init.coe
 
 %.bin: %.elf
 	$(OBJCOPY) -O binary $^ $@
@@ -71,7 +94,7 @@ clean:
 	$(RM) -f *.o *.d
 
 clean_all: clean
-	$(RM) -f $(OUTFILES)
+	$(RM) -f $(OUTFILES) *.coe
 
 show:
 	@echo PROGRAM_DIR:   $(PROGRAM_DIR)
