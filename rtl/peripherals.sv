@@ -27,15 +27,15 @@ module peripherals (
     parameter BE_WIDTH       = DATA_WIDTH/8;
     parameter ID_WIDTH       = 10;
     parameter AUX_WIDTH      = 8;
-
-    logic [ADDR_WIDTH-1:0]     master_apb_PADDR;
-    logic [DATA_WIDTH-1:0]     master_apb_PWDATA;
-    logic                      master_apb_PWRITE;
-    logic                      master_apb_PSEL;
-    logic                      master_apb_PENABLE;
-    logic [DATA_WIDTH-1:0]     master_apb_PRDATA;
-    logic                      master_apb_PREADY;
-    logic                      master_apb_PSLVERR;
+/*
+    logic [ADDR_WIDTH-1:0]     core_apb_PADDR;
+    logic [DATA_WIDTH-1:0]     core_apb_PWDATA;
+    logic                      core_apb_PWRITE;
+    logic                      core_apb_PSEL;
+    logic                      core_apb_PENABLE;
+    logic [DATA_WIDTH-1:0]     core_apb_PRDATA;
+    logic                      core_apb_PREADY;
+    logic                      core_apb_PSLVERR;
 
 	logic [ADDR_WIDTH-1:0]     master_0_PADDR  ;
 	logic [DATA_WIDTH-1:0]     master_0_PWDATA ;
@@ -45,8 +45,15 @@ module peripherals (
 	logic [DATA_WIDTH-1:0]     master_0_PRDATA ;
 	logic                      master_0_PREADY ;
 	logic                      master_0_PSLVERR;
+*/
 
-	(*mark_debug ="true"*)logic uart_0_interrupt;
+	APB_BUS core_data_bus();
+	APB_BUS gpio_apb_bus();
+	APB_BUS uart_apb_bus();
+	APB_BUS timer_apb_bus();
+
+	(*mark_debug ="true"*)logic uart_0_irq;
+	(*mark_debug ="true"*)logic timer_0_irq;
 
 
 	lint_2_apb #(
@@ -76,28 +83,28 @@ module peripherals (
 			.data_r_ID_o    (),
 
 			// apb master interface
-			.master_PADDR   (master_apb_PADDR),
-			.master_PWDATA  (master_apb_PWDATA),
-			.master_PWRITE  (master_apb_PWRITE),
-			.master_PSEL    (master_apb_PSEL),
-			.master_PENABLE (master_apb_PENABLE),
-			.master_PRDATA  (master_apb_PRDATA),
-			.master_PREADY  (master_apb_PREADY),
-			.master_PSLVERR (master_apb_PSLVERR)
+			.master_PADDR   (core_data_bus.paddr),
+			.master_PWDATA  (core_data_bus.pwdata),
+			.master_PWRITE  (core_data_bus.pwrite),
+			.master_PSEL    (core_data_bus.psel),
+			.master_PENABLE (core_data_bus.penable),
+			.master_PRDATA  (core_data_bus.prdata),
+			.master_PREADY  (core_data_bus.pready),
+			.master_PSLVERR (core_data_bus.pslverr)
 		);
-
+/*
 	peripherals_interconnect inst_peripherals_interconnect
 		(
 			.clk              (clk),
 			.rst_n            (rst_n),
-			.slaver_PADDR     (master_apb_PADDR),
-			.slaver_PWDATA    (master_apb_PWDATA),
-			.slaver_PWRITE    (master_apb_PWRITE),
-			.slaver_PSEL      (master_apb_PSEL),
-			.slaver_PENABLE   (master_apb_PENABLE),
-			.slaver_PRDATA    (master_apb_PRDATA),
-			.slaver_PREADY    (master_apb_PREADY),
-			.slaver_PSLVERR   (master_apb_PSLVERR),
+			.slaver_PADDR     (core_apb_PADDR),
+			.slaver_PWDATA    (core_apb_PWDATA),
+			.slaver_PWRITE    (core_apb_PWRITE),
+			.slaver_PSEL      (core_apb_PSEL),
+			.slaver_PENABLE   (core_apb_PENABLE),
+			.slaver_PRDATA    (core_apb_PRDATA),
+			.slaver_PREADY    (core_apb_PREADY),
+			.slaver_PSLVERR   (core_apb_PSLVERR),
 
 			.master_0_PADDR   (master_0_PADDR),
 			.master_0_PWDATA  (master_0_PWDATA),
@@ -108,8 +115,21 @@ module peripherals (
 			.master_0_PREADY  (master_0_PREADY),
 			.master_0_PSLVERR (master_0_PSLVERR)
 		);
+*/
+	periph_bus_wrap #(
+			.APB_ADDR_WIDTH(ADDR_WIDTH),
+			.APB_DATA_WIDTH(DATA_WIDTH)
+		) inst_periph_bus_wrap (
+			.clk_i        (clk_i),
+			.rst_ni       (rst_ni),
+			.apb_slave    (core_data_bus),
+			.gpio_master  (gpio_apb_bus),
+			.uart_master  (uart_apb_bus),
+			.timer_master (timer_apb_bus)
+		);
 
-/*
+
+
 	apb_gpio #(
 			.APB_ADDR_WIDTH(12),
 			.PAD_NUM(32)
@@ -119,14 +139,14 @@ module peripherals (
 
 			.dft_cg_enable_i ('b0),
 
-			.PADDR           (master_0_PADDR),
-			.PWDATA          (master_0_PWDATA),
-			.PWRITE          (master_0_PWRITE),
-			.PSEL            (master_0_PSEL),
-			.PENABLE         (master_0_PENABLE),
-			.PRDATA          (master_0_PRDATA),
-			.PREADY          (master_0_PREADY),
-			.PSLVERR         (master_0_PSLVERR),
+			.PADDR           (gpio_apb_bus.paddr),
+			.PWDATA          (gpio_apb_bus.pwdata),
+			.PWRITE          (gpio_apb_bus.pwrite),
+			.PSEL            (gpio_apb_bus.psel),
+			.PENABLE         (gpio_apb_bus.penable),
+			.PRDATA          (gpio_apb_bus.prdata),
+			.PREADY          (gpio_apb_bus.pready),
+			.PSLVERR         (gpio_apb_bus.pslverr),
 
 			.gpio_in         (32'h10293847), // test
 			.gpio_in_sync    (gpio_in_sync),
@@ -136,43 +156,45 @@ module peripherals (
 
 			.interrupt       (interrupt)
 		);
-*/		
-/*
-	apb_uart_sv #(
-			.APB_ADDR_WIDTH(12) // APB slaves are 4KB by default
-		) inst_apb_uart_0 (
-			.CLK     (clk),
-			.RSTN    (rst_n),
-			.PADDR   (master_0_PADDR),
-			.PWDATA  (master_0_PWDATA),
-			.PWRITE  (master_0_PWRITE),
-			.PSEL    (master_0_PSEL),
-			.PENABLE (master_0_PENABLE),
-			.PRDATA  (master_0_PRDATA),
-			.PREADY  (master_0_PREADY),
-			.PSLVERR (master_0_PSLVERR),
-			.rx_i    (uart_0_rx_i),
-			.tx_o    (uart_0_tx_o),
-			.event_o (uart_0_interrupt)
-		);
-*/
+
 	micro_uart3_apb inst_micro_uart_0
 		(
 			.clk         (clk),
 			.reset_n     (rst_n),
 			.ref_clock   (ref_clock),
-			.apb_paddr   (master_0_PADDR),
-			.apb_pwdata  (master_0_PWDATA),
-			.apb_pwrite  (master_0_PWRITE),
-			.apb_psel    (master_0_PSEL),
-			.apb_penable (master_0_PENABLE),
-			.apb_prdata  (master_0_PRDATA),
-			.apb_pready  (master_0_PREADY),
-			.apb_pslverr (master_0_PSLVERR),
-			.irq         (uart_0_interrupt),
+
+			.apb_paddr   (uart_apb_bus.paddr),
+			.apb_pwdata  (uart_apb_bus.pwdata),
+			.apb_pwrite  (uart_apb_bus.pwrite),
+			.apb_psel    (uart_apb_bus.psel),
+			.apb_penable (uart_apb_bus.penable),
+			.apb_prdata  (uart_apb_bus.prdata),
+			.apb_pready  (uart_apb_bus.pready),
+			.apb_pslverr (uart_apb_bus.pslverr),
+
+			.irq         (uart_0_irq),
 			.ser_in      (uart_0_rx_i),
 			.ser_out     (uart_0_tx_o)
 		);
+		
 
+	apb_timer #(
+			.APB_ADDR_WIDTH(12),
+			.TIMER_CNT(2)
+		) inst_apb_timer (
+			.HCLK    (clk),
+			.HRESETn (rst_n),
+
+			.PADDR   (timer_apb_bus.paddr),
+			.PWDATA  (timer_apb_bus.pwdata),
+			.PWRITE  (timer_apb_bus.pwrite),
+			.PSEL    (timer_apb_bus.psel),
+			.PENABLE (timer_apb_bus.penable),
+			.PRDATA  (timer_apb_bus.prdata),
+			.PREADY  (timer_apb_bus.pready),
+			.PSLVERR (timer_apb_bus.pslverr),
+
+			.irq_o   (timer_0_irq)
+		);
 
 endmodule

@@ -10,3 +10,6 @@
 [submodule "rtl/micro_uart"]
 	path = rtl/micro_uart
 	url = git@github.com:Starrynightzyq/microuart.git
+[submodule "rtl/apb_timer"]
+	path = rtl/apb_timer
+	url = git@github.com:Starrynightzyq/apb_timer.git

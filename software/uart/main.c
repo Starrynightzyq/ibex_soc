@@ -6,32 +6,15 @@
 #include <stdio.h>
 #include "platform.h"
 #include "uart_driver.h"
+#include "gpio_driver.h"
 #include "delay.h"
 
 #define RAM_SIZE (16*1024)
 
-
-// void ram_test_word(int test_data) {
-//   int read_data;
-//   int error_times = 0;
-
-//   volatile uint8_t *RAM_START = (volatile uint8_t *) 0x80000000;
-
-//   for (int i = 0; i < (RAM_SIZE/4); i++)
-//   {
-//     *(RAM_START+i) = test_data;
-//   }
-//   for (int i = 0; i < (RAM_SIZE/4); i++)
-//   {
-//     read_data = *(RAM_START+i);
-//     if (read_data != test_data)
-//     {
-//       error_times++;
-//     }
-//   }
-//   *RAM_START = error_times;
-// }
-
+void gpio_init(void) {
+  GPIO_DIR_SET(0xffffffff); // all output
+  GPIO_ENABLE(0xffffffff);
+}
   
 // static uint32_t *UART_BASE_ADDR = (uint32_t *) 0x02000000;
 uint32_t test_data = 0;
@@ -52,6 +35,7 @@ int main(int argc, char **argv) {
   // UART0_REG(0) = test_data;
   
   uart_init(115200);
+  gpio_init();
   // uart_write(0x00);
   // uart_read_data = uart_read();
   // *var++ = uart_read_data;
@@ -62,6 +46,7 @@ int main(int argc, char **argv) {
 
   printf("U");
   *var = 0x5a;
+  GPIO_WRITE(0xaaaaaaaa);
 
 
   while (1) {

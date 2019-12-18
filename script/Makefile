@@ -9,14 +9,14 @@ vivado:
 	rm -rf ../vivado_build/*
 	vivado -mode batch -source ./vivado.tcl &
 
-.PHONY: clean
-clean:
-	rm -rf vivado*.log vivado*.jou
-	rm -rf reports
-	rm -rf .Xil
-	rm -rf .cache
-	rm -rf `ls ../rtl/mmcm/* | egrep -v '(../rtl/mmcm/mmcm.xci)'`
-	rm -rf ../vivado_build
+# .PHONY: clean
+# clean:
+# 	rm -rf vivado*.log vivado*.jou
+# 	rm -rf reports
+# 	rm -rf .Xil
+# 	rm -rf .cache
+# 	rm -rf `ls ../rtl/mmcm/* | egrep -v '(../rtl/mmcm/mmcm.xci)'`
+# 	rm -rf ../vivado_build
 
 .PHONY: release
 release: 
@@ -33,5 +33,8 @@ show:
 	echo ibex_soc_$(DATE).tar.gz
 
 .PHONY: clean_backup
+clean_backup:
 	rm -rf ../../ibex_soc*.tar.gz
 	rm -rf /media/fitz/Samsung_T5/Backup/lowrisc/hardware/ibex_soc*.tar.gz
+	ls -all ../../
+	ls -all /media/fitz/Samsung_T5/Backup/lowrisc/hardware/

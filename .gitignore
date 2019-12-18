@@ -19,10 +19,14 @@
 !rtl/mmcm/*.xci
 !rtl/lint_bridge/*.sv
 !rtl/lint_bridge/*.v
+!rtl/axi2apb/*.sv
+!rtl/axi2apb/*.v
+!rtl/apb_channel/*.sv
+!rtl/apb_channel/*.v
 !rtl/apb_gpio
 !rtl/apb_uart_sv
 !rtl/micro_uart
-!rtl/axi2apb
+!rtl/apb_timer
 
 # script
 !script/Makefile
@@ -43,6 +47,11 @@
 !software/uart/*.c
 !software/uart/*.ld
 !software/uart/Makefile
+
+!software/timer/*.S
+!software/timer/*.c
+!software/timer/*.ld
+!software/timer/Makefile
 
 # testbench
 !testbench/*.sv

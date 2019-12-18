@@ -18,6 +18,33 @@
 `define DM_EXCEPTION_ADDR (32'h00000000)
 
 // On-Chip Peripherals
-`define PERI_SIZE (32'h1e00_0000)
+// `define PERI_SIZE (32'h1e00_0000)
 `define PERI_START (32'h0200_0000)
+`define PERI_END (32'h1FFF_FFFF)
+`define PERI_SIZE (PERI_END - PERI_START + 1)
 `define PERI_MASK (`PERI_SIZE-1)
+
+// apb connect
+`define APB_ASSIGN_SLAVE(lhs, rhs)     \
+    assign lhs.paddr    = rhs.paddr;   \
+    assign lhs.pwdata   = rhs.pwdata;  \
+    assign lhs.pwrite   = rhs.pwrite;  \
+    assign lhs.psel     = rhs.psel;    \
+    assign lhs.penable  = rhs.penable; \
+    assign rhs.prdata   = lhs.prdata;  \
+    assign rhs.pready   = lhs.pready;  \
+    assign rhs.pslverr  = lhs.pslverr
+
+`define APB_ASSIGN_MASTER(lhs, rhs) `APB_ASSIGN_SLAVE(rhs, lhs)
+
+// apb slaver number
+`define NB_MASTER 3
+
+`define GPIO_START_ADDR  32'h1001_2000
+`define GPIO_END_ADDR    32'h1001_2FFF
+
+`define UART_START_ADDR  32'h1001_3000
+`define UART_END_ADDR    32'h1001_3FFF
+
+`define TIMER_START_ADDR 32'h1002_3000
+`define TIMER_END_ADDR   32'h1002_3FFF

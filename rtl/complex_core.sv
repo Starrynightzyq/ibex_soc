@@ -147,10 +147,10 @@ module complex_core (
       instr_mem_req_1     = (data_addr & ~`ITCM_MASK) == `ITCM_START;
       instr_mem_addr_1    = data_addr - (`ITCM_START);
 
-      peri_req            = (data_addr & ~`PERI_MASK) == `PERI_START;
+      peri_req            = (data_addr >= `PERI_START) && (data_addr <= `PERI_END);
       peri_write          = data_we;
       peri_be             = data_be;
-      peri_addr           = data_addr - (`PERI_START);
+      peri_addr           = data_addr;
       peri_wdata          = data_wdata;
     end
   end

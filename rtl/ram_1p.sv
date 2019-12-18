@@ -44,7 +44,7 @@ module ram_2p #(
   assign unused_addr_parts = {addr_i_0[31:Aw+2], addr_i_0[1:0]};
 
 generate
-  if (simple_ram) begin
+  if (simple_ram) begin:SIMPLE_MEM_GEN
 
     (* ram_style = "block" *)logic [31:0] mem [Depth]; 
 
@@ -73,7 +73,7 @@ generate
       end
     end
 
-  end else begin 
+  end else begin:BLK_MEM_GEN
 
     logic [3:0] wea;
     logic [3:0] web;
