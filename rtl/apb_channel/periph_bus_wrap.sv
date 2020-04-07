@@ -20,7 +20,9 @@ module periph_bus_wrap #(
     APB_BUS.Slave  apb_slave,
     APB_BUS.Master gpio_master,
     APB_BUS.Master uart_master,
-    APB_BUS.Master timer_master
+    APB_BUS.Master timer_master,
+    APB_BUS.Master soc_ctrl_master,
+    APB_BUS.Master debug_master
 );
 
     localparam NB_MASTER = `NB_MASTER;
@@ -51,6 +53,14 @@ module periph_bus_wrap #(
     `APB_ASSIGN_MASTER(s_masters[2], timer_master);
     assign s_start_addr[2] = `TIMER_START_ADDR;
     assign s_end_addr[2]   = `TIMER_END_ADDR;
+
+    `APB_ASSIGN_MASTER(s_masters[3], soc_ctrl_master);
+    assign s_start_addr[3] = `SOC_CTRL_START_ADDR;
+    assign s_end_addr[3]   = `SOC_CTRL_END_ADDR;
+
+    `APB_ASSIGN_MASTER(s_masters[4], debug_master);
+    assign s_start_addr[4] = `DEBUG_START_ADDR;
+    assign s_end_addr[4]   = `DEBUG_END_ADDR;
 
     //********************************************************
     //**************** SOC BUS *******************************

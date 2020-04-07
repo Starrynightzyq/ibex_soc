@@ -1,0 +1,502 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Mar 29 16:37:44 2020
+# Process ID: 28764
+# Current directory: /home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1
+# Command line: vivado -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+# Log file: /home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/design_1_wrapper.vds
+# Journal file: /home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/fitz/.Xilinx/Vivado/2017.4/data/ip'.
+Command: synth_design -top design_1_wrapper -part xc7a100tcsg324-1 -flatten_hierarchy none -sfcu
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 28785 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1311.422 ; gain = 84.988 ; free physical = 3662 ; free virtual = 19671
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-638] synthesizing module 'design_1' [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.srcs/sources_1/bd/design_1/synth/design_1.v:52]
+INFO: [Synth 8-638] synthesizing module 'design_1_xlconstant_0_1' [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/realtime/design_1_xlconstant_0_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xlconstant_0_1' (1#1) [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/realtime/design_1_xlconstant_0_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_0_1' [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/realtime/design_1_axi_gpio_0_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_gpio_0_1' (2#1) [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/realtime/design_1_axi_gpio_0_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_intc_0_0' [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/realtime/design_1_axi_intc_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_intc_0_0' (3#1) [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/realtime/design_1_axi_intc_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_uartlite_0_1' [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/realtime/design_1_axi_uartlite_0_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_uartlite_0_1' (4#1) [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/realtime/design_1_axi_uartlite_0_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'clk_and_rst_imp_1TISILG' [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.srcs/sources_1/bd/design_1/synth/design_1.v:12]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0' [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/realtime/design_1_clk_wiz_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'design_1_clk_wiz_0' (5#1) [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/realtime/design_1_clk_wiz_0_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_clk_wiz_100M_0' [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/realtime/design_1_rst_clk_wiz_100M_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_rst_clk_wiz_100M_0' (6#1) [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/realtime/design_1_rst_clk_wiz_100M_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'rst_clk_wiz_100M' of module 'design_1_rst_clk_wiz_100M_0' requires 10 connections, but only 7 given [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.srcs/sources_1/bd/design_1/synth/design_1.v:41]
+INFO: [Synth 8-256] done synthesizing module 'clk_and_rst_imp_1TISILG' (7#1) [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.srcs/sources_1/bd/design_1/synth/design_1.v:12]
+INFO: [Synth 8-638] synthesizing module 'dtcm_imp_WP3ICL' [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.srcs/sources_1/bd/design_1/synth/design_1.v:2929]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_bram_ctrl_0_0' [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/realtime/design_1_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_bram_ctrl_0_0' (8#1) [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/realtime/design_1_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_bram_ctrl_0_bram_0' [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/realtime/design_1_axi_bram_ctrl_0_bram_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_bram_ctrl_0_bram_0' (9#1) [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/realtime/design_1_axi_bram_ctrl_0_bram_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'blk_dtcm' of module 'design_1_axi_bram_ctrl_0_bram_0' requires 16 connections, but only 14 given [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.srcs/sources_1/bd/design_1/synth/design_1.v:3146]
+INFO: [Synth 8-256] done synthesizing module 'dtcm_imp_WP3ICL' (10#1) [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.srcs/sources_1/bd/design_1/synth/design_1.v:2929]
+INFO: [Synth 8-638] synthesizing module 'design_1_ibex_core_axi_wallpaper_0_0' [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/realtime/design_1_ibex_core_axi_wallpaper_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_ibex_core_axi_wallpaper_0_0' (11#1) [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/realtime/design_1_ibex_core_axi_wallpaper_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'ibex_core_axi_wallpaper_0' of module 'design_1_ibex_core_axi_wallpaper_0_0' requires 98 connections, but only 95 given [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.srcs/sources_1/bd/design_1/synth/design_1.v:462]
+INFO: [Synth 8-638] synthesizing module 'design_1_ibex_core_axi_wallpaper_0_axi_periph_0' [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.srcs/sources_1/bd/design_1/synth/design_1.v:939]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_4XAA1H' [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.srcs/sources_1/bd/design_1/synth/design_1.v:5438]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_4XAA1H' (12#1) [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.srcs/sources_1/bd/design_1/synth/design_1.v:5438]
+INFO: [Synth 8-256] done synthesizing module 'design_1_ibex_core_axi_wallpaper_0_axi_periph_0' (13#1) [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.srcs/sources_1/bd/design_1/synth/design_1.v:939]
+INFO: [Synth 8-638] synthesizing module 'design_1_ibex_core_axi_wallpaper_0_axi_periph_1_0' [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.srcs/sources_1/bd/design_1/synth/design_1.v:1409]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_QWE1FZ' [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.srcs/sources_1/bd/design_1/synth/design_1.v:3652]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_QWE1FZ' (14#1) [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.srcs/sources_1/bd/design_1/synth/design_1.v:3652]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_13UNAR2' [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.srcs/sources_1/bd/design_1/synth/design_1.v:3973]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_13UNAR2' (15#1) [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.srcs/sources_1/bd/design_1/synth/design_1.v:3973]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_S2DBGS' [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.srcs/sources_1/bd/design_1/synth/design_1.v:4231]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_0' [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_auto_pc_0' (16#1) [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/realtime/design_1_auto_pc_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_pc' of module 'design_1_auto_pc_0' requires 60 connections, but only 58 given [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.srcs/sources_1/bd/design_1/synth/design_1.v:4470]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_S2DBGS' (17#1) [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.srcs/sources_1/bd/design_1/synth/design_1.v:4231]
+INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_12EZ25P' [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.srcs/sources_1/bd/design_1/synth/design_1.v:4531]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_1' [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/realtime/design_1_auto_pc_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_auto_pc_1' (18#1) [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/realtime/design_1_auto_pc_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_pc' of module 'design_1_auto_pc_1' requires 60 connections, but only 58 given [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.srcs/sources_1/bd/design_1/synth/design_1.v:4770]
+INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_12EZ25P' (19#1) [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.srcs/sources_1/bd/design_1/synth/design_1.v:4531]
+INFO: [Synth 8-638] synthesizing module 'm04_couplers_imp_TSB2KP' [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.srcs/sources_1/bd/design_1/synth/design_1.v:4831]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_2' [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/realtime/design_1_auto_pc_2_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_auto_pc_2' (20#1) [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/realtime/design_1_auto_pc_2_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_pc' of module 'design_1_auto_pc_2' requires 60 connections, but only 58 given [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.srcs/sources_1/bd/design_1/synth/design_1.v:5070]
+INFO: [Synth 8-256] done synthesizing module 'm04_couplers_imp_TSB2KP' (21#1) [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.srcs/sources_1/bd/design_1/synth/design_1.v:4831]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_16O8N0T' [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.srcs/sources_1/bd/design_1/synth/design_1.v:5131]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_16O8N0T' (22#1) [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.srcs/sources_1/bd/design_1/synth/design_1.v:5131]
+INFO: [Synth 8-638] synthesizing module 'design_1_xbar_0' [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xbar_0' (23#1) [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/realtime/design_1_xbar_0_stub.v:6]
+WARNING: [Synth 8-689] width (4) of port connection 'm_axi_aruser' does not match port width (20) of module 'design_1_xbar_0' [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.srcs/sources_1/bd/design_1/synth/design_1.v:2852]
+WARNING: [Synth 8-689] width (4) of port connection 'm_axi_awuser' does not match port width (20) of module 'design_1_xbar_0' [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.srcs/sources_1/bd/design_1/synth/design_1.v:2865]
+WARNING: [Synth 8-689] width (4) of port connection 'm_axi_wuser' does not match port width (20) of module 'design_1_xbar_0' [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.srcs/sources_1/bd/design_1/synth/design_1.v:2883]
+INFO: [Synth 8-256] done synthesizing module 'design_1_ibex_core_axi_wallpaper_0_axi_periph_1_0' (24#1) [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.srcs/sources_1/bd/design_1/synth/design_1.v:1409]
+INFO: [Synth 8-638] synthesizing module 'itcm_imp_1TC25OR' [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.srcs/sources_1/bd/design_1/synth/design_1.v:3163]
+INFO: [Synth 8-638] synthesizing module 'design_1_blk_mem_gen_0_0' [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/realtime/design_1_blk_mem_gen_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_blk_mem_gen_0_0' (25#1) [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/realtime/design_1_blk_mem_gen_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_ram_axi2_wallpaper_0_0' [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/realtime/design_1_ram_axi2_wallpaper_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_ram_axi2_wallpaper_0_0' (26#1) [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/realtime/design_1_ram_axi2_wallpaper_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'itcm_imp_1TC25OR' (27#1) [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.srcs/sources_1/bd/design_1/synth/design_1.v:3163]
+INFO: [Synth 8-638] synthesizing module 'design_1_xlconstant_0_0' [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/realtime/design_1_xlconstant_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xlconstant_0_0' (28#1) [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/realtime/design_1_xlconstant_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_xlconcat_0_0' [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/realtime/design_1_xlconcat_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xlconcat_0_0' (29#1) [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/realtime/design_1_xlconcat_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (30#1) [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.srcs/sources_1/bd/design_1/synth/design_1.v:52]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (31#1) [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+WARNING: [Synth 8-3331] design s00_couplers_imp_16O8N0T has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_16O8N0T has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_16O8N0T has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_16O8N0T has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m04_couplers_imp_TSB2KP has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m04_couplers_imp_TSB2KP has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m03_couplers_imp_12EZ25P has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m03_couplers_imp_12EZ25P has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_S2DBGS has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_S2DBGS has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_13UNAR2 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_13UNAR2 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_13UNAR2 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_13UNAR2 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_QWE1FZ has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_QWE1FZ has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_QWE1FZ has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_QWE1FZ has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_4XAA1H has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_4XAA1H has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_4XAA1H has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_4XAA1H has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design design_1_ibex_core_axi_wallpaper_0_axi_periph_0 has unconnected port ACLK
+WARNING: [Synth 8-3331] design design_1_ibex_core_axi_wallpaper_0_axi_periph_0 has unconnected port ARESETN
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_araddr[31]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_araddr[30]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_araddr[29]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_araddr[28]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_araddr[27]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_araddr[26]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_araddr[25]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_araddr[24]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_araddr[23]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_araddr[22]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_araddr[21]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_araddr[20]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_araddr[19]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_araddr[18]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_araddr[17]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_araddr[16]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_awaddr[31]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_awaddr[30]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_awaddr[29]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_awaddr[28]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_awaddr[27]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_awaddr[26]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_awaddr[25]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_awaddr[24]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_awaddr[23]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_awaddr[22]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_awaddr[21]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_awaddr[20]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_awaddr[19]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_awaddr[18]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_awaddr[17]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_awaddr[16]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1352.953 ; gain = 126.520 ; free physical = 3673 ; free virtual = 19683
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1352.953 ; gain = 126.520 ; free physical = 3673 ; free virtual = 19683
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/dcp17/design_1_ibex_core_axi_wallpaper_0_0_in_context.xdc] for cell 'design_1_i/ibex_core_axi_wallpaper_0'
+Finished Parsing XDC File [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/dcp17/design_1_ibex_core_axi_wallpaper_0_0_in_context.xdc] for cell 'design_1_i/ibex_core_axi_wallpaper_0'
+Parsing XDC File [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/dcp18/design_1_clk_wiz_0_in_context.xdc] for cell 'design_1_i/clk_and_rst/clk_wiz'
+Finished Parsing XDC File [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/dcp18/design_1_clk_wiz_0_in_context.xdc] for cell 'design_1_i/clk_and_rst/clk_wiz'
+Parsing XDC File [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/dcp19/design_1_rst_clk_wiz_100M_0_in_context.xdc] for cell 'design_1_i/clk_and_rst/rst_clk_wiz_100M'
+Finished Parsing XDC File [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/dcp19/design_1_rst_clk_wiz_100M_0_in_context.xdc] for cell 'design_1_i/clk_and_rst/rst_clk_wiz_100M'
+Parsing XDC File [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/dcp20/design_1_axi_bram_ctrl_0_0_in_context.xdc] for cell 'design_1_i/dtcm/axi_bram_ctrl_0'
+Finished Parsing XDC File [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/dcp20/design_1_axi_bram_ctrl_0_0_in_context.xdc] for cell 'design_1_i/dtcm/axi_bram_ctrl_0'
+Parsing XDC File [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/dcp21/design_1_xlconstant_0_0_in_context.xdc] for cell 'design_1_i/vcc'
+Finished Parsing XDC File [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/dcp21/design_1_xlconstant_0_0_in_context.xdc] for cell 'design_1_i/vcc'
+Parsing XDC File [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/dcp22/design_1_xlconstant_0_1_in_context.xdc] for cell 'design_1_i/GND'
+Finished Parsing XDC File [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/dcp22/design_1_xlconstant_0_1_in_context.xdc] for cell 'design_1_i/GND'
+Parsing XDC File [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/dcp23/design_1_axi_bram_ctrl_0_bram_0_in_context.xdc] for cell 'design_1_i/dtcm/blk_dtcm'
+Finished Parsing XDC File [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/dcp23/design_1_axi_bram_ctrl_0_bram_0_in_context.xdc] for cell 'design_1_i/dtcm/blk_dtcm'
+Parsing XDC File [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/dcp24/design_1_axi_uartlite_0_1_in_context.xdc] for cell 'design_1_i/axi_uartlite_0'
+Finished Parsing XDC File [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/dcp24/design_1_axi_uartlite_0_1_in_context.xdc] for cell 'design_1_i/axi_uartlite_0'
+Parsing XDC File [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/dcp25/design_1_axi_gpio_0_1_in_context.xdc] for cell 'design_1_i/axi_gpio_0'
+Finished Parsing XDC File [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/dcp25/design_1_axi_gpio_0_1_in_context.xdc] for cell 'design_1_i/axi_gpio_0'
+Parsing XDC File [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/dcp26/design_1_ram_axi2_wallpaper_0_0_in_context.xdc] for cell 'design_1_i/itcm/ram_axi2_wallpaper_0'
+Finished Parsing XDC File [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/dcp26/design_1_ram_axi2_wallpaper_0_0_in_context.xdc] for cell 'design_1_i/itcm/ram_axi2_wallpaper_0'
+Parsing XDC File [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/dcp27/design_1_blk_mem_gen_0_0_in_context.xdc] for cell 'design_1_i/itcm/blk_itcm'
+Finished Parsing XDC File [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/dcp27/design_1_blk_mem_gen_0_0_in_context.xdc] for cell 'design_1_i/itcm/blk_itcm'
+Parsing XDC File [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/dcp28/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/ibex_core_axi_wallpaper_0_axi_periph_1/xbar'
+Finished Parsing XDC File [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/dcp28/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/ibex_core_axi_wallpaper_0_axi_periph_1/xbar'
+Parsing XDC File [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/dcp29/design_1_axi_intc_0_0_in_context.xdc] for cell 'design_1_i/axi_intc_0'
+Finished Parsing XDC File [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/dcp29/design_1_axi_intc_0_0_in_context.xdc] for cell 'design_1_i/axi_intc_0'
+Parsing XDC File [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/dcp30/design_1_xlconcat_0_0_in_context.xdc] for cell 'design_1_i/xlconcat_0'
+Finished Parsing XDC File [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/dcp30/design_1_xlconcat_0_0_in_context.xdc] for cell 'design_1_i/xlconcat_0'
+Parsing XDC File [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/dcp31/design_1_auto_pc_1_in_context.xdc] for cell 'design_1_i/ibex_core_axi_wallpaper_0_axi_periph_1/m04_couplers/auto_pc'
+Finished Parsing XDC File [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/dcp31/design_1_auto_pc_1_in_context.xdc] for cell 'design_1_i/ibex_core_axi_wallpaper_0_axi_periph_1/m04_couplers/auto_pc'
+Parsing XDC File [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/dcp32/design_1_auto_pc_1_in_context.xdc] for cell 'design_1_i/ibex_core_axi_wallpaper_0_axi_periph_1/m03_couplers/auto_pc'
+Finished Parsing XDC File [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/dcp32/design_1_auto_pc_1_in_context.xdc] for cell 'design_1_i/ibex_core_axi_wallpaper_0_axi_periph_1/m03_couplers/auto_pc'
+Parsing XDC File [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/dcp33/design_1_auto_pc_1_in_context.xdc] for cell 'design_1_i/ibex_core_axi_wallpaper_0_axi_periph_1/m02_couplers/auto_pc'
+Finished Parsing XDC File [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/dcp33/design_1_auto_pc_1_in_context.xdc] for cell 'design_1_i/ibex_core_axi_wallpaper_0_axi_periph_1/m02_couplers/auto_pc'
+Parsing XDC File [/home/fitz/FPGA/Project/ibex_soc/constraints/Nexys-4-DDR.xdc]
+Finished Parsing XDC File [/home/fitz/FPGA/Project/ibex_soc/constraints/Nexys-4-DDR.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/fitz/FPGA/Project/ibex_soc/constraints/Nexys-4-DDR.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1697.609 ; gain = 0.000 ; free physical = 3407 ; free virtual = 19417
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 1697.609 ; gain = 471.176 ; free physical = 3490 ; free virtual = 19500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 1697.609 ; gain = 471.176 ; free physical = 3490 ; free virtual = 19500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  /home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/dcp18/design_1_clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  /home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/.Xil/Vivado-28764-fitz-MS-7B00/dcp18/design_1_clk_wiz_0_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for design_1_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/GND. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_gpio_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_intc_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_uartlite_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/clk_and_rst/clk_wiz. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/clk_and_rst/rst_clk_wiz_100M. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/dtcm/axi_bram_ctrl_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/dtcm/blk_dtcm. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/ibex_core_axi_wallpaper_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/ibex_core_axi_wallpaper_0_axi_periph. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/ibex_core_axi_wallpaper_0_axi_periph_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/ibex_core_axi_wallpaper_0_axi_periph_1/m02_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/ibex_core_axi_wallpaper_0_axi_periph_1/m03_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/ibex_core_axi_wallpaper_0_axi_periph_1/m04_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/ibex_core_axi_wallpaper_0_axi_periph_1/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/itcm/blk_itcm. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/itcm/ram_axi2_wallpaper_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/vcc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/xlconcat_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 1697.609 ; gain = 471.176 ; free physical = 3492 ; free virtual = 19503
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 1697.609 ; gain = 471.176 ; free physical = 3493 ; free virtual = 19503
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design s00_couplers_imp_16O8N0T has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_16O8N0T has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_16O8N0T has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_16O8N0T has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m04_couplers_imp_TSB2KP has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m04_couplers_imp_TSB2KP has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m03_couplers_imp_12EZ25P has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m03_couplers_imp_12EZ25P has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_S2DBGS has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_S2DBGS has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_13UNAR2 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_13UNAR2 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_13UNAR2 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_13UNAR2 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_QWE1FZ has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_QWE1FZ has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_QWE1FZ has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_QWE1FZ has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_4XAA1H has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_4XAA1H has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_4XAA1H has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_4XAA1H has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design design_1_ibex_core_axi_wallpaper_0_axi_periph_0 has unconnected port ACLK
+WARNING: [Synth 8-3331] design design_1_ibex_core_axi_wallpaper_0_axi_periph_0 has unconnected port ARESETN
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_araddr[31]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_araddr[30]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_araddr[29]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_araddr[28]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_araddr[27]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_araddr[26]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_araddr[25]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_araddr[24]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_araddr[23]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_araddr[22]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_araddr[21]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_araddr[20]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_araddr[19]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_araddr[18]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_araddr[17]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_araddr[16]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_awaddr[31]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_awaddr[30]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_awaddr[29]
+WARNING: [Synth 8-3331] design dtcm_imp_WP3ICL has unconnected port S_AXI_awaddr[28]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:36 . Memory (MB): peak = 1697.609 ; gain = 471.176 ; free physical = 3483 ; free virtual = 19493
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/clk_and_rst/clk_wiz/clk_out1' to pin 'design_1_i/clk_and_rst/clk_wiz/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/dtcm/axi_bram_ctrl_0/bram_clk_a' to pin 'design_1_i/dtcm/axi_bram_ctrl_0/bbstub_bram_clk_a/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/dtcm/axi_bram_ctrl_0/bram_clk_b' to pin 'design_1_i/dtcm/axi_bram_ctrl_0/bbstub_bram_clk_b/O'
+INFO: [Synth 8-5819] Moved 3 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:43 . Memory (MB): peak = 1697.609 ; gain = 471.176 ; free physical = 3364 ; free virtual = 19374
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:43 . Memory (MB): peak = 1697.609 ; gain = 471.176 ; free physical = 3364 ; free virtual = 19374
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:43 . Memory (MB): peak = 1697.609 ; gain = 471.176 ; free physical = 3361 ; free virtual = 19371
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:44 . Memory (MB): peak = 1697.609 ; gain = 471.176 ; free physical = 3361 ; free virtual = 19371
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:44 . Memory (MB): peak = 1697.609 ; gain = 471.176 ; free physical = 3361 ; free virtual = 19371
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:44 . Memory (MB): peak = 1697.609 ; gain = 471.176 ; free physical = 3361 ; free virtual = 19371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------------------------+----------+
+|      |BlackBox name                        |Instances |
++------+-------------------------------------+----------+
+|1     |design_1_clk_wiz_0                   |         1|
+|2     |design_1_rst_clk_wiz_100M_0          |         1|
+|3     |design_1_axi_bram_ctrl_0_0           |         1|
+|4     |design_1_axi_bram_ctrl_0_bram_0      |         1|
+|5     |design_1_auto_pc_0                   |         1|
+|6     |design_1_auto_pc_1                   |         1|
+|7     |design_1_auto_pc_2                   |         1|
+|8     |design_1_xbar_0                      |         1|
+|9     |design_1_blk_mem_gen_0_0             |         1|
+|10    |design_1_ram_axi2_wallpaper_0_0      |         1|
+|11    |design_1_xlconstant_0_1              |         1|
+|12    |design_1_axi_gpio_0_1                |         1|
+|13    |design_1_axi_intc_0_0                |         1|
+|14    |design_1_axi_uartlite_0_1            |         1|
+|15    |design_1_ibex_core_axi_wallpaper_0_0 |         1|
+|16    |design_1_xlconstant_0_0              |         1|
+|17    |design_1_xlconcat_0_0                |         1|
++------+-------------------------------------+----------+
+
+Report Cell Usage: 
++------+-------------------------------------+------+
+|      |Cell                                 |Count |
++------+-------------------------------------+------+
+|1     |design_1_auto_pc_0                   |     1|
+|2     |design_1_auto_pc_1                   |     1|
+|3     |design_1_auto_pc_2                   |     1|
+|4     |design_1_axi_bram_ctrl_0_0           |     1|
+|5     |design_1_axi_bram_ctrl_0_bram_0      |     1|
+|6     |design_1_axi_gpio_0_1                |     1|
+|7     |design_1_axi_intc_0_0                |     1|
+|8     |design_1_axi_uartlite_0_1            |     1|
+|9     |design_1_blk_mem_gen_0_0             |     1|
+|10    |design_1_clk_wiz_0                   |     1|
+|11    |design_1_ibex_core_axi_wallpaper_0_0 |     1|
+|12    |design_1_ram_axi2_wallpaper_0_0      |     1|
+|13    |design_1_rst_clk_wiz_100M_0          |     1|
+|14    |design_1_xbar_0                      |     1|
+|15    |design_1_xlconcat_0_0                |     1|
+|16    |design_1_xlconstant_0_0              |     1|
+|17    |design_1_xlconstant_0_1              |     1|
+|18    |IBUF                                 |    18|
+|19    |OBUF                                 |    17|
++------+-------------------------------------+------+
+
+Report Instance Areas: 
++------+-------------------------------------------+--------------------------------------------------+------+
+|      |Instance                                   |Module                                            |Cells |
++------+-------------------------------------------+--------------------------------------------------+------+
+|1     |top                                        |                                                  |  2801|
+|2     |  design_1_i                               |design_1                                          |  2766|
+|3     |    clk_and_rst                            |clk_and_rst_imp_1TISILG                           |     7|
+|4     |    dtcm                                   |dtcm_imp_WP3ICL                                   |   242|
+|5     |    ibex_core_axi_wallpaper_0_axi_periph   |design_1_ibex_core_axi_wallpaper_0_axi_periph_0   |     0|
+|6     |    ibex_core_axi_wallpaper_0_axi_periph_1 |design_1_ibex_core_axi_wallpaper_0_axi_periph_1_0 |  1605|
+|7     |      m02_couplers                         |m02_couplers_imp_S2DBGS                           |   177|
+|8     |      m03_couplers                         |m03_couplers_imp_12EZ25P                          |   177|
+|9     |      m04_couplers                         |m04_couplers_imp_TSB2KP                           |   177|
+|10    |    itcm                                   |itcm_imp_1TC25OR                                  |   350|
++------+-------------------------------------------+--------------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:44 . Memory (MB): peak = 1697.609 ; gain = 471.176 ; free physical = 3361 ; free virtual = 19371
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 56 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1697.609 ; gain = 126.520 ; free physical = 3414 ; free virtual = 19424
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:44 . Memory (MB): peak = 1697.609 ; gain = 471.176 ; free physical = 3414 ; free virtual = 19424
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+82 Infos, 109 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:47 . Memory (MB): peak = 1697.609 ; gain = 496.012 ; free physical = 4082 ; free virtual = 19425
+INFO: [Common 17-1381] The checkpoint '/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.12 . Memory (MB): peak = 1697.609 ; gain = 0.000 ; free physical = 4083 ; free virtual = 19426
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 29 16:38:43 2020...

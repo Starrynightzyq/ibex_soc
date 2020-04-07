@@ -1,0 +1,462 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Mar 29 16:34:38 2020
+# Process ID: 28308
+# Current directory: /home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/design_1_ram_axi2_wallpaper_0_0_synth_1
+# Command line: vivado -log design_1_ram_axi2_wallpaper_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_ram_axi2_wallpaper_0_0.tcl
+# Log file: /home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/design_1_ram_axi2_wallpaper_0_0_synth_1/design_1_ram_axi2_wallpaper_0_0.vds
+# Journal file: /home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/design_1_ram_axi2_wallpaper_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_ram_axi2_wallpaper_0_0.tcl -notrace
+Command: synth_design -top design_1_ram_axi2_wallpaper_0_0 -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 28383 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1287.609 ; gain = 87.992 ; free physical = 3796 ; free virtual = 19149
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_ram_axi2_wallpaper_0_0' [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.srcs/sources_1/bd/design_1/ip/design_1_ram_axi2_wallpaper_0_0/synth/design_1_ram_axi2_wallpaper_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'ram_axi2_wallpaper' [/home/fitz/FPGA/Project/ibex_soc/rtl/axi_mem_if/src/ram_axi2_wallpaper.v:1]
+	Parameter AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter AXI_ID_WIDTH bound to: 12 - type: integer 
+	Parameter AXI_USER_WIDTH bound to: 4 - type: integer 
+	Parameter AXI_STRB_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'ram_axi2' [/home/fitz/FPGA/Project/ibex_soc/rtl/axi_mem_if/src/ram_axi2.sv:1]
+	Parameter AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter AXI_ID_WIDTH bound to: 12 - type: integer 
+	Parameter AXI_USER_WIDTH bound to: 4 - type: integer 
+	Parameter AXI_STRB_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'AXI_BUS' [/home/fitz/FPGA/Project/ibex_soc/rtl/interfaces/interface.sv:58]
+	Parameter AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter AXI_ID_WIDTH bound to: 12 - type: integer 
+	Parameter AXI_USER_WIDTH bound to: 4 - type: integer 
+	Parameter AXI_STRB_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'AXI_BUS' (0#1) [/home/fitz/FPGA/Project/ibex_soc/rtl/interfaces/interface.sv:58]
+INFO: [Synth 8-638] synthesizing module 'AXI_BUS' [/home/fitz/FPGA/Project/ibex_soc/rtl/interfaces/interface.sv:58]
+	Parameter AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter AXI_ID_WIDTH bound to: 12 - type: integer 
+	Parameter AXI_USER_WIDTH bound to: 4 - type: integer 
+	Parameter AXI_STRB_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'AXI_BUS' (0#1) [/home/fitz/FPGA/Project/ibex_soc/rtl/interfaces/interface.sv:58]
+INFO: [Synth 8-638] synthesizing module 'axi2mem' [/home/fitz/FPGA/Project/ibex_soc/rtl/axi_mem_if/src/axi2mem.sv:20]
+	Parameter AXI_ID_WIDTH bound to: 12 - type: integer 
+	Parameter AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter AXI_USER_WIDTH bound to: 4 - type: integer 
+	Parameter LOG_NR_BYTES bound to: 2 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/fitz/FPGA/Project/ibex_soc/rtl/axi_mem_if/src/axi2mem.sv:188]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/fitz/FPGA/Project/ibex_soc/rtl/axi_mem_if/src/axi2mem.sv:230]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/fitz/FPGA/Project/ibex_soc/rtl/axi_mem_if/src/axi2mem.sv:119]
+WARNING: [Synth 8-6014] Unused sequential element ax_req_q_reg[size] was removed.  [/home/fitz/FPGA/Project/ibex_soc/rtl/axi_mem_if/src/axi2mem.sv:285]
+INFO: [Synth 8-256] done synthesizing module 'axi2mem' (1#1) [/home/fitz/FPGA/Project/ibex_soc/rtl/axi_mem_if/src/axi2mem.sv:20]
+INFO: [Synth 8-256] done synthesizing module 'ram_axi2' (2#1) [/home/fitz/FPGA/Project/ibex_soc/rtl/axi_mem_if/src/ram_axi2.sv:1]
+INFO: [Synth 8-256] done synthesizing module 'ram_axi2_wallpaper' (3#1) [/home/fitz/FPGA/Project/ibex_soc/rtl/axi_mem_if/src/ram_axi2_wallpaper.v:1]
+INFO: [Synth 8-256] done synthesizing module 'design_1_ram_axi2_wallpaper_0_0' (4#1) [/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.srcs/sources_1/bd/design_1/ip/design_1_ram_axi2_wallpaper_0_0/synth/design_1_ram_axi2_wallpaper_0_0.v:57]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.aw_prot[2]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.aw_prot[1]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.aw_prot[0]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.aw_region[3]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.aw_region[2]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.aw_region[1]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.aw_region[0]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.aw_size[2]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.aw_size[1]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.aw_size[0]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.aw_lock
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.aw_cache[3]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.aw_cache[2]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.aw_cache[1]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.aw_cache[0]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.aw_qos[3]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.aw_qos[2]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.aw_qos[1]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.aw_qos[0]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.aw_user[3]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.aw_user[2]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.aw_user[1]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.aw_user[0]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.ar_prot[2]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.ar_prot[1]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.ar_prot[0]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.ar_region[3]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.ar_region[2]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.ar_region[1]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.ar_region[0]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.ar_size[2]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.ar_size[1]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.ar_size[0]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.ar_lock
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.ar_cache[3]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.ar_cache[2]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.ar_cache[1]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.ar_cache[0]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.ar_qos[3]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.ar_qos[2]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.ar_qos[1]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.ar_qos[0]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.ar_user[3]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.ar_user[2]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.ar_user[1]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.ar_user[0]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.w_user[3]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.w_user[2]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.w_user[1]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.w_user[0]
+WARNING: [Synth 8-3331] design ram_axi2 has unconnected port sa_axi_wstrb[7]
+WARNING: [Synth 8-3331] design ram_axi2 has unconnected port sa_axi_wstrb[6]
+WARNING: [Synth 8-3331] design ram_axi2 has unconnected port sa_axi_wstrb[5]
+WARNING: [Synth 8-3331] design ram_axi2 has unconnected port sa_axi_wstrb[4]
+WARNING: [Synth 8-3331] design ram_axi2 has unconnected port sb_axi_wstrb[7]
+WARNING: [Synth 8-3331] design ram_axi2 has unconnected port sb_axi_wstrb[6]
+WARNING: [Synth 8-3331] design ram_axi2 has unconnected port sb_axi_wstrb[5]
+WARNING: [Synth 8-3331] design ram_axi2 has unconnected port sb_axi_wstrb[4]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1329.141 ; gain = 129.523 ; free physical = 3781 ; free virtual = 19135
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1329.141 ; gain = 129.523 ; free physical = 3768 ; free virtual = 19122
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1689.977 ; gain = 0.000 ; free physical = 3274 ; free virtual = 18629
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:36 . Memory (MB): peak = 1689.977 ; gain = 490.359 ; free physical = 3301 ; free virtual = 18656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:36 . Memory (MB): peak = 1689.977 ; gain = 490.359 ; free physical = 3301 ; free virtual = 18656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:36 . Memory (MB): peak = 1689.977 ; gain = 490.359 ; free physical = 3303 ; free virtual = 18658
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_q_reg' in module 'axi2mem'
+INFO: [Synth 8-5544] ROM "slave\.r_valid" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "slave\.b_valid" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_d0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_d0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+                    READ |                              001 |                              001
+             WAIT_WVALID |                              010 |                              100
+                   WRITE |                              011 |                              010
+                  SEND_B |                              100 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_q_reg' using encoding 'sequential' in module 'axi2mem'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:36 . Memory (MB): peak = 1689.977 ; gain = 490.359 ; free physical = 3294 ; free virtual = 18649
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 6     
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 4     
+	                2 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 16    
+	   5 Input     32 Bit        Muxes := 6     
+	   3 Input     32 Bit        Muxes := 4     
+	   2 Input     12 Bit        Muxes := 2     
+	   5 Input     12 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 2     
+	   5 Input      8 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+	  10 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 8     
+	   5 Input      1 Bit        Muxes := 24    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module axi2mem 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 8     
+	   5 Input     32 Bit        Muxes := 3     
+	   3 Input     32 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 1     
+	   5 Input     12 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 12    
+Module ram_axi2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.aw_prot[2]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.aw_prot[1]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.aw_prot[0]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.aw_region[3]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.aw_region[2]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.aw_region[1]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.aw_region[0]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.aw_size[2]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.aw_size[1]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.aw_size[0]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.aw_lock
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.aw_cache[3]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.aw_cache[2]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.aw_cache[1]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.aw_cache[0]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.aw_qos[3]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.aw_qos[2]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.aw_qos[1]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.aw_qos[0]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.aw_user[3]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.aw_user[2]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.aw_user[1]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.aw_user[0]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.ar_prot[2]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.ar_prot[1]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.ar_prot[0]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.ar_region[3]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.ar_region[2]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.ar_region[1]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.ar_region[0]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.ar_size[2]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.ar_size[1]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.ar_size[0]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.ar_lock
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.ar_cache[3]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.ar_cache[2]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.ar_cache[1]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.ar_cache[0]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.ar_qos[3]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.ar_qos[2]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.ar_qos[1]
+WARNING: [Synth 8-3331] design axi2mem has unconnected port slave\.ar_qos[0]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 1689.977 ; gain = 490.359 ; free physical = 3270 ; free virtual = 18625
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:46 . Memory (MB): peak = 1689.977 ; gain = 490.359 ; free physical = 3126 ; free virtual = 18481
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:46 . Memory (MB): peak = 1689.977 ; gain = 490.359 ; free physical = 3125 ; free virtual = 18480
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:47 . Memory (MB): peak = 1689.977 ; gain = 490.359 ; free physical = 3118 ; free virtual = 18474
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:47 . Memory (MB): peak = 1689.977 ; gain = 490.359 ; free physical = 3111 ; free virtual = 18466
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:47 . Memory (MB): peak = 1689.977 ; gain = 490.359 ; free physical = 3110 ; free virtual = 18465
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:47 . Memory (MB): peak = 1689.977 ; gain = 490.359 ; free physical = 3110 ; free virtual = 18466
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:47 . Memory (MB): peak = 1689.977 ; gain = 490.359 ; free physical = 3110 ; free virtual = 18466
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:47 . Memory (MB): peak = 1689.977 ; gain = 490.359 ; free physical = 3110 ; free virtual = 18466
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:47 . Memory (MB): peak = 1689.977 ; gain = 490.359 ; free physical = 3110 ; free virtual = 18466
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    70|
+|2     |LUT1   |     5|
+|3     |LUT2   |   106|
+|4     |LUT3   |   142|
+|5     |LUT4   |   212|
+|6     |LUT5   |   166|
+|7     |LUT6   |   364|
+|8     |FDCE   |   194|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------------+-------------------+------+
+|      |Instance             |Module             |Cells |
++------+---------------------+-------------------+------+
+|1     |top                  |                   |  1259|
+|2     |  inst               |ram_axi2_wallpaper |  1195|
+|3     |    inst_ram_axi2    |ram_axi2           |  1195|
+|4     |      inst_axi2mem_0 |axi2mem            |   593|
+|5     |      inst_axi2mem_1 |axi2mem_0          |   592|
++------+---------------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:47 . Memory (MB): peak = 1689.977 ; gain = 490.359 ; free physical = 3110 ; free virtual = 18466
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 58 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1689.977 ; gain = 129.523 ; free physical = 3167 ; free virtual = 18522
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:47 . Memory (MB): peak = 1689.977 ; gain = 490.359 ; free physical = 3167 ; free virtual = 18522
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 70 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+33 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:49 . Memory (MB): peak = 1709.008 ; gain = 534.215 ; free physical = 3167 ; free virtual = 18522
+INFO: [Common 17-1381] The checkpoint '/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/design_1_ram_axi2_wallpaper_0_0_synth_1/design_1_ram_axi2_wallpaper_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1174] Renamed 4 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/design_1_ram_axi2_wallpaper_0_0_synth_1/design_1_ram_axi2_wallpaper_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_ram_axi2_wallpaper_0_0_utilization_synth.rpt -pb design_1_ram_axi2_wallpaper_0_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.12 . Memory (MB): peak = 1733.020 ; gain = 0.000 ; free physical = 3166 ; free virtual = 18523
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 29 16:35:38 2020...

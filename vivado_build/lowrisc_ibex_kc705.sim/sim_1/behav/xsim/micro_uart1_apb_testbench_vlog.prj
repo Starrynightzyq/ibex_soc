@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  -i "../../../../" --include "../../../../../rtl/mmcm" \
+"../../../../../rtl/micro_uart/hdl/micro_uart1.v" \
+"../../../../../rtl/micro_uart/hdl/micro_uart1_apb.v" \
+"../../../../../rtl/micro_uart/tb/micro_uart1_testbench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

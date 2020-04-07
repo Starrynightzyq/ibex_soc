@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/fitz/FPGA/PROJ/lowrisc/hardware/ibex_soc/vivado_build/lowrisc_ibex_kc705.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="46916532fs"></ZoomEndTime>
+      <Cursor1Time time="10074000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="221"></NameColumnWidth>
+      <ValueColumnWidth column_width="80"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="10" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject type="array" fp_name="inst_complex_core/data_rdata">
+      <obj_property name="ElementShortName">inst_complex_core/data_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_rdata[31:0]</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="inst_complex_core/instr_addr">
+      <obj_property name="ElementShortName">inst_complex_core/instr_addr[31:2]</obj_property>
+      <obj_property name="ObjectShortName">instr_addr[31:2]</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="inst_complex_core/instr_gnt">
+      <obj_property name="ElementShortName">inst_complex_core/instr_gnt</obj_property>
+      <obj_property name="ObjectShortName">instr_gnt</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="inst_complex_core/instr_rdata">
+      <obj_property name="ElementShortName">inst_complex_core/instr_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instr_rdata[31:0]</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="inst_complex_core/instr_req">
+      <obj_property name="ElementShortName">inst_complex_core/instr_req</obj_property>
+      <obj_property name="ObjectShortName">instr_req</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="inst_complex_core/instr_rvalid">
+      <obj_property name="ElementShortName">inst_complex_core/instr_rvalid</obj_property>
+      <obj_property name="ObjectShortName">instr_rvalid</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="u_ila_0_data_gnt">
+      <obj_property name="ElementShortName">u_ila_0_data_gnt</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_data_gnt</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="u_ila_0_data_rvalid">
+      <obj_property name="ElementShortName">u_ila_0_data_rvalid</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_data_rvalid</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="uart_rx_i_IBUF">
+      <obj_property name="ElementShortName">uart_rx_i_IBUF</obj_property>
+      <obj_property name="ObjectShortName">uart_rx_i_IBUF</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="uart_tx_o_OBUF">
+      <obj_property name="ElementShortName">uart_tx_o_OBUF</obj_property>
+      <obj_property name="ObjectShortName">uart_tx_o_OBUF</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+</wave_config>

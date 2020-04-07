@@ -1,0 +1,2125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_design_1_wrapper_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="axi_bram_ctrl_funcs" />
+            <top_module name="glbl" />
+            <top_module name="ibex_pkg" />
+            <top_module name="ipif_pkg" />
+            <top_module name="lib_pkg" />
+            <top_module name="tb_design_1_wrapper" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="73480500000fs"></ZoomEndTime>
+      <Cursor1Time time="9060500000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="500"></NameColumnWidth>
+      <ValueColumnWidth column_width="100"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="11" />
+   <wave_markers>
+      <marker label="" time="15923500000" />
+      <marker label="" time="11950500000" />
+   </wave_markers>
+   <wvobject type="group" fp_name="group437">
+      <obj_property name="label">design1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/clk_100MHz">
+         <obj_property name="ElementShortName">clk_100MHz</obj_property>
+         <obj_property name="ObjectShortName">clk_100MHz</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/led_16bits_tri_o">
+         <obj_property name="ElementShortName">led_16bits_tri_o[15:0]</obj_property>
+         <obj_property name="ObjectShortName">led_16bits_tri_o[15:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/reset">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/usb_uart_rxd">
+         <obj_property name="ElementShortName">usb_uart_rxd</obj_property>
+         <obj_property name="ObjectShortName">usb_uart_rxd</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/usb_uart_txd">
+         <obj_property name="ElementShortName">usb_uart_txd</obj_property>
+         <obj_property name="ObjectShortName">usb_uart_txd</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group459">
+      <obj_property name="label">core_axi</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/axi_aclk">
+         <obj_property name="ElementShortName">axi_aclk</obj_property>
+         <obj_property name="ObjectShortName">axi_aclk</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/axi_aresetn">
+         <obj_property name="ElementShortName">axi_aresetn</obj_property>
+         <obj_property name="ObjectShortName">axi_aresetn</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/irq_software_i">
+         <obj_property name="ElementShortName">irq_software_i</obj_property>
+         <obj_property name="ObjectShortName">irq_software_i</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/irq_timer_i">
+         <obj_property name="ElementShortName">irq_timer_i</obj_property>
+         <obj_property name="ObjectShortName">irq_timer_i</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/irq_external_i">
+         <obj_property name="ElementShortName">irq_external_i</obj_property>
+         <obj_property name="ObjectShortName">irq_external_i</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/irq_fast_i">
+         <obj_property name="ElementShortName">irq_fast_i[14:0]</obj_property>
+         <obj_property name="ObjectShortName">irq_fast_i[14:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/irq_nm_i">
+         <obj_property name="ElementShortName">irq_nm_i</obj_property>
+         <obj_property name="ObjectShortName">irq_nm_i</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/debug_req_i">
+         <obj_property name="ElementShortName">debug_req_i</obj_property>
+         <obj_property name="ObjectShortName">debug_req_i</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/fetch_enable_i">
+         <obj_property name="ElementShortName">fetch_enable_i</obj_property>
+         <obj_property name="ObjectShortName">fetch_enable_i</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/core_sleep_o">
+         <obj_property name="ElementShortName">core_sleep_o</obj_property>
+         <obj_property name="ObjectShortName">core_sleep_o</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/data_axi_awid">
+         <obj_property name="ElementShortName">data_axi_awid[11:0]</obj_property>
+         <obj_property name="ObjectShortName">data_axi_awid[11:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/data_axi_awaddr">
+         <obj_property name="ElementShortName">data_axi_awaddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">data_axi_awaddr[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/data_axi_awlen">
+         <obj_property name="ElementShortName">data_axi_awlen[7:0]</obj_property>
+         <obj_property name="ObjectShortName">data_axi_awlen[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/data_axi_awsize">
+         <obj_property name="ElementShortName">data_axi_awsize[2:0]</obj_property>
+         <obj_property name="ObjectShortName">data_axi_awsize[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/data_axi_awburst">
+         <obj_property name="ElementShortName">data_axi_awburst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">data_axi_awburst[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/data_axi_awlock">
+         <obj_property name="ElementShortName">data_axi_awlock[0:0]</obj_property>
+         <obj_property name="ObjectShortName">data_axi_awlock[0:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/data_axi_awcache">
+         <obj_property name="ElementShortName">data_axi_awcache[3:0]</obj_property>
+         <obj_property name="ObjectShortName">data_axi_awcache[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/data_axi_awprot">
+         <obj_property name="ElementShortName">data_axi_awprot[2:0]</obj_property>
+         <obj_property name="ObjectShortName">data_axi_awprot[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/data_axi_awregion">
+         <obj_property name="ElementShortName">data_axi_awregion[3:0]</obj_property>
+         <obj_property name="ObjectShortName">data_axi_awregion[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/data_axi_awqos">
+         <obj_property name="ElementShortName">data_axi_awqos[3:0]</obj_property>
+         <obj_property name="ObjectShortName">data_axi_awqos[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/data_axi_awuser">
+         <obj_property name="ElementShortName">data_axi_awuser[3:0]</obj_property>
+         <obj_property name="ObjectShortName">data_axi_awuser[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/data_axi_awvalid">
+         <obj_property name="ElementShortName">data_axi_awvalid</obj_property>
+         <obj_property name="ObjectShortName">data_axi_awvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/data_axi_awready">
+         <obj_property name="ElementShortName">data_axi_awready</obj_property>
+         <obj_property name="ObjectShortName">data_axi_awready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/data_axi_wdata">
+         <obj_property name="ElementShortName">data_axi_wdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">data_axi_wdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/data_axi_wstrb">
+         <obj_property name="ElementShortName">data_axi_wstrb[3:0]</obj_property>
+         <obj_property name="ObjectShortName">data_axi_wstrb[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/data_axi_wlast">
+         <obj_property name="ElementShortName">data_axi_wlast</obj_property>
+         <obj_property name="ObjectShortName">data_axi_wlast</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/data_axi_wuser">
+         <obj_property name="ElementShortName">data_axi_wuser[3:0]</obj_property>
+         <obj_property name="ObjectShortName">data_axi_wuser[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/data_axi_wvalid">
+         <obj_property name="ElementShortName">data_axi_wvalid</obj_property>
+         <obj_property name="ObjectShortName">data_axi_wvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/data_axi_wready">
+         <obj_property name="ElementShortName">data_axi_wready</obj_property>
+         <obj_property name="ObjectShortName">data_axi_wready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/data_axi_bid">
+         <obj_property name="ElementShortName">data_axi_bid[11:0]</obj_property>
+         <obj_property name="ObjectShortName">data_axi_bid[11:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/data_axi_bresp">
+         <obj_property name="ElementShortName">data_axi_bresp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">data_axi_bresp[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/data_axi_buser">
+         <obj_property name="ElementShortName">data_axi_buser[3:0]</obj_property>
+         <obj_property name="ObjectShortName">data_axi_buser[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/data_axi_bvalid">
+         <obj_property name="ElementShortName">data_axi_bvalid</obj_property>
+         <obj_property name="ObjectShortName">data_axi_bvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/data_axi_bready">
+         <obj_property name="ElementShortName">data_axi_bready</obj_property>
+         <obj_property name="ObjectShortName">data_axi_bready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/data_axi_arid">
+         <obj_property name="ElementShortName">data_axi_arid[11:0]</obj_property>
+         <obj_property name="ObjectShortName">data_axi_arid[11:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/data_axi_araddr">
+         <obj_property name="ElementShortName">data_axi_araddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">data_axi_araddr[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/data_axi_arlen">
+         <obj_property name="ElementShortName">data_axi_arlen[7:0]</obj_property>
+         <obj_property name="ObjectShortName">data_axi_arlen[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/data_axi_arsize">
+         <obj_property name="ElementShortName">data_axi_arsize[2:0]</obj_property>
+         <obj_property name="ObjectShortName">data_axi_arsize[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/data_axi_arburst">
+         <obj_property name="ElementShortName">data_axi_arburst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">data_axi_arburst[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/data_axi_arlock">
+         <obj_property name="ElementShortName">data_axi_arlock[0:0]</obj_property>
+         <obj_property name="ObjectShortName">data_axi_arlock[0:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/data_axi_arcache">
+         <obj_property name="ElementShortName">data_axi_arcache[3:0]</obj_property>
+         <obj_property name="ObjectShortName">data_axi_arcache[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/data_axi_arprot">
+         <obj_property name="ElementShortName">data_axi_arprot[2:0]</obj_property>
+         <obj_property name="ObjectShortName">data_axi_arprot[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/data_axi_arregion">
+         <obj_property name="ElementShortName">data_axi_arregion[3:0]</obj_property>
+         <obj_property name="ObjectShortName">data_axi_arregion[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/data_axi_arqos">
+         <obj_property name="ElementShortName">data_axi_arqos[3:0]</obj_property>
+         <obj_property name="ObjectShortName">data_axi_arqos[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/data_axi_aruser">
+         <obj_property name="ElementShortName">data_axi_aruser[3:0]</obj_property>
+         <obj_property name="ObjectShortName">data_axi_aruser[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/data_axi_arvalid">
+         <obj_property name="ElementShortName">data_axi_arvalid</obj_property>
+         <obj_property name="ObjectShortName">data_axi_arvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/data_axi_arready">
+         <obj_property name="ElementShortName">data_axi_arready</obj_property>
+         <obj_property name="ObjectShortName">data_axi_arready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/data_axi_rid">
+         <obj_property name="ElementShortName">data_axi_rid[11:0]</obj_property>
+         <obj_property name="ObjectShortName">data_axi_rid[11:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/data_axi_rdata">
+         <obj_property name="ElementShortName">data_axi_rdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">data_axi_rdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/data_axi_rresp">
+         <obj_property name="ElementShortName">data_axi_rresp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">data_axi_rresp[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/data_axi_rlast">
+         <obj_property name="ElementShortName">data_axi_rlast</obj_property>
+         <obj_property name="ObjectShortName">data_axi_rlast</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/data_axi_ruser">
+         <obj_property name="ElementShortName">data_axi_ruser[3:0]</obj_property>
+         <obj_property name="ObjectShortName">data_axi_ruser[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/data_axi_rvalid">
+         <obj_property name="ElementShortName">data_axi_rvalid</obj_property>
+         <obj_property name="ObjectShortName">data_axi_rvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/data_axi_rready">
+         <obj_property name="ElementShortName">data_axi_rready</obj_property>
+         <obj_property name="ObjectShortName">data_axi_rready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/instr_axi_awid">
+         <obj_property name="ElementShortName">instr_axi_awid[11:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_axi_awid[11:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/instr_axi_awaddr">
+         <obj_property name="ElementShortName">instr_axi_awaddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_axi_awaddr[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/instr_axi_awlen">
+         <obj_property name="ElementShortName">instr_axi_awlen[7:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_axi_awlen[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/instr_axi_awsize">
+         <obj_property name="ElementShortName">instr_axi_awsize[2:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_axi_awsize[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/instr_axi_awburst">
+         <obj_property name="ElementShortName">instr_axi_awburst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_axi_awburst[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/instr_axi_awlock">
+         <obj_property name="ElementShortName">instr_axi_awlock[0:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_axi_awlock[0:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/instr_axi_awcache">
+         <obj_property name="ElementShortName">instr_axi_awcache[3:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_axi_awcache[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/instr_axi_awprot">
+         <obj_property name="ElementShortName">instr_axi_awprot[2:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_axi_awprot[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/instr_axi_awregion">
+         <obj_property name="ElementShortName">instr_axi_awregion[3:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_axi_awregion[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/instr_axi_awqos">
+         <obj_property name="ElementShortName">instr_axi_awqos[3:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_axi_awqos[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/instr_axi_awuser">
+         <obj_property name="ElementShortName">instr_axi_awuser[3:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_axi_awuser[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/instr_axi_awvalid">
+         <obj_property name="ElementShortName">instr_axi_awvalid</obj_property>
+         <obj_property name="ObjectShortName">instr_axi_awvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/instr_axi_awready">
+         <obj_property name="ElementShortName">instr_axi_awready</obj_property>
+         <obj_property name="ObjectShortName">instr_axi_awready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/instr_axi_wdata">
+         <obj_property name="ElementShortName">instr_axi_wdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_axi_wdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/instr_axi_wstrb">
+         <obj_property name="ElementShortName">instr_axi_wstrb[3:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_axi_wstrb[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/instr_axi_wlast">
+         <obj_property name="ElementShortName">instr_axi_wlast</obj_property>
+         <obj_property name="ObjectShortName">instr_axi_wlast</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/instr_axi_wuser">
+         <obj_property name="ElementShortName">instr_axi_wuser[3:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_axi_wuser[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/instr_axi_wvalid">
+         <obj_property name="ElementShortName">instr_axi_wvalid</obj_property>
+         <obj_property name="ObjectShortName">instr_axi_wvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/instr_axi_wready">
+         <obj_property name="ElementShortName">instr_axi_wready</obj_property>
+         <obj_property name="ObjectShortName">instr_axi_wready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/instr_axi_bid">
+         <obj_property name="ElementShortName">instr_axi_bid[11:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_axi_bid[11:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/instr_axi_bresp">
+         <obj_property name="ElementShortName">instr_axi_bresp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_axi_bresp[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/instr_axi_buser">
+         <obj_property name="ElementShortName">instr_axi_buser[3:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_axi_buser[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/instr_axi_bvalid">
+         <obj_property name="ElementShortName">instr_axi_bvalid</obj_property>
+         <obj_property name="ObjectShortName">instr_axi_bvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/instr_axi_bready">
+         <obj_property name="ElementShortName">instr_axi_bready</obj_property>
+         <obj_property name="ObjectShortName">instr_axi_bready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/instr_axi_arid">
+         <obj_property name="ElementShortName">instr_axi_arid[11:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_axi_arid[11:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/instr_axi_araddr">
+         <obj_property name="ElementShortName">instr_axi_araddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_axi_araddr[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/instr_axi_arlen">
+         <obj_property name="ElementShortName">instr_axi_arlen[7:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_axi_arlen[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/instr_axi_arsize">
+         <obj_property name="ElementShortName">instr_axi_arsize[2:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_axi_arsize[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/instr_axi_arburst">
+         <obj_property name="ElementShortName">instr_axi_arburst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_axi_arburst[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/instr_axi_arlock">
+         <obj_property name="ElementShortName">instr_axi_arlock[0:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_axi_arlock[0:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/instr_axi_arcache">
+         <obj_property name="ElementShortName">instr_axi_arcache[3:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_axi_arcache[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/instr_axi_arprot">
+         <obj_property name="ElementShortName">instr_axi_arprot[2:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_axi_arprot[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/instr_axi_arregion">
+         <obj_property name="ElementShortName">instr_axi_arregion[3:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_axi_arregion[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/instr_axi_arqos">
+         <obj_property name="ElementShortName">instr_axi_arqos[3:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_axi_arqos[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/instr_axi_aruser">
+         <obj_property name="ElementShortName">instr_axi_aruser[3:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_axi_aruser[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/instr_axi_arvalid">
+         <obj_property name="ElementShortName">instr_axi_arvalid</obj_property>
+         <obj_property name="ObjectShortName">instr_axi_arvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/instr_axi_arready">
+         <obj_property name="ElementShortName">instr_axi_arready</obj_property>
+         <obj_property name="ObjectShortName">instr_axi_arready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/instr_axi_rid">
+         <obj_property name="ElementShortName">instr_axi_rid[11:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_axi_rid[11:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/instr_axi_rdata">
+         <obj_property name="ElementShortName">instr_axi_rdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_axi_rdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/instr_axi_rresp">
+         <obj_property name="ElementShortName">instr_axi_rresp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_axi_rresp[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/instr_axi_rlast">
+         <obj_property name="ElementShortName">instr_axi_rlast</obj_property>
+         <obj_property name="ObjectShortName">instr_axi_rlast</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/instr_axi_ruser">
+         <obj_property name="ElementShortName">instr_axi_ruser[3:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_axi_ruser[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/instr_axi_rvalid">
+         <obj_property name="ElementShortName">instr_axi_rvalid</obj_property>
+         <obj_property name="ObjectShortName">instr_axi_rvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/instr_axi_rready">
+         <obj_property name="ElementShortName">instr_axi_rready</obj_property>
+         <obj_property name="ObjectShortName">instr_axi_rready</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group558">
+      <obj_property name="label">core</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/clk_i">
+         <obj_property name="ElementShortName">clk_i</obj_property>
+         <obj_property name="ObjectShortName">clk_i</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/rst_ni">
+         <obj_property name="ElementShortName">rst_ni</obj_property>
+         <obj_property name="ObjectShortName">rst_ni</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/test_en_i">
+         <obj_property name="ElementShortName">test_en_i</obj_property>
+         <obj_property name="ObjectShortName">test_en_i</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/hart_id_i">
+         <obj_property name="ElementShortName">hart_id_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">hart_id_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/boot_addr_i">
+         <obj_property name="ElementShortName">boot_addr_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">boot_addr_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/instr_req_o">
+         <obj_property name="ElementShortName">instr_req_o</obj_property>
+         <obj_property name="ObjectShortName">instr_req_o</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/instr_gnt_i">
+         <obj_property name="ElementShortName">instr_gnt_i</obj_property>
+         <obj_property name="ObjectShortName">instr_gnt_i</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/instr_rvalid_i">
+         <obj_property name="ElementShortName">instr_rvalid_i</obj_property>
+         <obj_property name="ObjectShortName">instr_rvalid_i</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/instr_addr_o">
+         <obj_property name="ElementShortName">instr_addr_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_addr_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/instr_rdata_i">
+         <obj_property name="ElementShortName">instr_rdata_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_rdata_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/instr_err_i">
+         <obj_property name="ElementShortName">instr_err_i</obj_property>
+         <obj_property name="ObjectShortName">instr_err_i</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/data_req_o">
+         <obj_property name="ElementShortName">data_req_o</obj_property>
+         <obj_property name="ObjectShortName">data_req_o</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/data_gnt_i">
+         <obj_property name="ElementShortName">data_gnt_i</obj_property>
+         <obj_property name="ObjectShortName">data_gnt_i</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/data_rvalid_i">
+         <obj_property name="ElementShortName">data_rvalid_i</obj_property>
+         <obj_property name="ObjectShortName">data_rvalid_i</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/data_we_o">
+         <obj_property name="ElementShortName">data_we_o</obj_property>
+         <obj_property name="ObjectShortName">data_we_o</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/data_be_o">
+         <obj_property name="ElementShortName">data_be_o[3:0]</obj_property>
+         <obj_property name="ObjectShortName">data_be_o[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/data_addr_o">
+         <obj_property name="ElementShortName">data_addr_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">data_addr_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/data_wdata_o">
+         <obj_property name="ElementShortName">data_wdata_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">data_wdata_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/data_rdata_i">
+         <obj_property name="ElementShortName">data_rdata_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">data_rdata_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/data_err_i">
+         <obj_property name="ElementShortName">data_err_i</obj_property>
+         <obj_property name="ObjectShortName">data_err_i</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/irq_software_i">
+         <obj_property name="ElementShortName">irq_software_i</obj_property>
+         <obj_property name="ObjectShortName">irq_software_i</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/irq_timer_i">
+         <obj_property name="ElementShortName">irq_timer_i</obj_property>
+         <obj_property name="ObjectShortName">irq_timer_i</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/irq_external_i">
+         <obj_property name="ElementShortName">irq_external_i</obj_property>
+         <obj_property name="ObjectShortName">irq_external_i</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/irq_fast_i">
+         <obj_property name="ElementShortName">irq_fast_i[14:0]</obj_property>
+         <obj_property name="ObjectShortName">irq_fast_i[14:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/irq_nm_i">
+         <obj_property name="ElementShortName">irq_nm_i</obj_property>
+         <obj_property name="ObjectShortName">irq_nm_i</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/debug_req_i">
+         <obj_property name="ElementShortName">debug_req_i</obj_property>
+         <obj_property name="ObjectShortName">debug_req_i</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/fetch_enable_i">
+         <obj_property name="ElementShortName">fetch_enable_i</obj_property>
+         <obj_property name="ObjectShortName">fetch_enable_i</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/core_sleep_o">
+         <obj_property name="ElementShortName">core_sleep_o</obj_property>
+         <obj_property name="ObjectShortName">core_sleep_o</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/instr_valid_id">
+         <obj_property name="ElementShortName">instr_valid_id</obj_property>
+         <obj_property name="ObjectShortName">instr_valid_id</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/instr_new_id">
+         <obj_property name="ElementShortName">instr_new_id</obj_property>
+         <obj_property name="ObjectShortName">instr_new_id</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/instr_rdata_id">
+         <obj_property name="ElementShortName">instr_rdata_id[31:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_rdata_id[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/instr_rdata_c_id">
+         <obj_property name="ElementShortName">instr_rdata_c_id[15:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_rdata_c_id[15:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/instr_is_compressed_id">
+         <obj_property name="ElementShortName">instr_is_compressed_id</obj_property>
+         <obj_property name="ObjectShortName">instr_is_compressed_id</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/instr_fetch_err">
+         <obj_property name="ElementShortName">instr_fetch_err</obj_property>
+         <obj_property name="ObjectShortName">instr_fetch_err</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/illegal_c_insn_id">
+         <obj_property name="ElementShortName">illegal_c_insn_id</obj_property>
+         <obj_property name="ObjectShortName">illegal_c_insn_id</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/pc_if">
+         <obj_property name="ElementShortName">pc_if[31:0]</obj_property>
+         <obj_property name="ObjectShortName">pc_if[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/pc_id">
+         <obj_property name="ElementShortName">pc_id[31:0]</obj_property>
+         <obj_property name="ObjectShortName">pc_id[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/instr_valid_clear">
+         <obj_property name="ElementShortName">instr_valid_clear</obj_property>
+         <obj_property name="ObjectShortName">instr_valid_clear</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/pc_set">
+         <obj_property name="ElementShortName">pc_set</obj_property>
+         <obj_property name="ObjectShortName">pc_set</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/pc_mux_id">
+         <obj_property name="ElementShortName">pc_mux_id[2:0]</obj_property>
+         <obj_property name="ObjectShortName">pc_mux_id[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/exc_pc_mux_id">
+         <obj_property name="ElementShortName">exc_pc_mux_id[1:0]</obj_property>
+         <obj_property name="ObjectShortName">exc_pc_mux_id[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/exc_cause">
+         <obj_property name="ElementShortName">exc_cause[5:0]</obj_property>
+         <obj_property name="ObjectShortName">exc_cause[5:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/lsu_load_err">
+         <obj_property name="ElementShortName">lsu_load_err</obj_property>
+         <obj_property name="ObjectShortName">lsu_load_err</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/lsu_store_err">
+         <obj_property name="ElementShortName">lsu_store_err</obj_property>
+         <obj_property name="ObjectShortName">lsu_store_err</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/lsu_addr_incr_req">
+         <obj_property name="ElementShortName">lsu_addr_incr_req</obj_property>
+         <obj_property name="ObjectShortName">lsu_addr_incr_req</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/lsu_addr_last">
+         <obj_property name="ElementShortName">lsu_addr_last[31:0]</obj_property>
+         <obj_property name="ObjectShortName">lsu_addr_last[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/jump_target_ex">
+         <obj_property name="ElementShortName">jump_target_ex[31:0]</obj_property>
+         <obj_property name="ObjectShortName">jump_target_ex[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/branch_decision">
+         <obj_property name="ElementShortName">branch_decision</obj_property>
+         <obj_property name="ObjectShortName">branch_decision</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/ctrl_busy">
+         <obj_property name="ElementShortName">ctrl_busy</obj_property>
+         <obj_property name="ObjectShortName">ctrl_busy</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/if_busy">
+         <obj_property name="ElementShortName">if_busy</obj_property>
+         <obj_property name="ObjectShortName">if_busy</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/lsu_busy">
+         <obj_property name="ElementShortName">lsu_busy</obj_property>
+         <obj_property name="ObjectShortName">lsu_busy</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/core_busy_d">
+         <obj_property name="ElementShortName">core_busy_d</obj_property>
+         <obj_property name="ObjectShortName">core_busy_d</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/core_busy_q">
+         <obj_property name="ElementShortName">core_busy_q</obj_property>
+         <obj_property name="ObjectShortName">core_busy_q</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/alu_operator_ex">
+         <obj_property name="ElementShortName">alu_operator_ex[4:0]</obj_property>
+         <obj_property name="ObjectShortName">alu_operator_ex[4:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/alu_operand_a_ex">
+         <obj_property name="ElementShortName">alu_operand_a_ex[31:0]</obj_property>
+         <obj_property name="ObjectShortName">alu_operand_a_ex[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/alu_operand_b_ex">
+         <obj_property name="ElementShortName">alu_operand_b_ex[31:0]</obj_property>
+         <obj_property name="ObjectShortName">alu_operand_b_ex[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/alu_adder_result_ex">
+         <obj_property name="ElementShortName">alu_adder_result_ex[31:0]</obj_property>
+         <obj_property name="ObjectShortName">alu_adder_result_ex[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/regfile_wdata_ex">
+         <obj_property name="ElementShortName">regfile_wdata_ex[31:0]</obj_property>
+         <obj_property name="ObjectShortName">regfile_wdata_ex[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/mult_en_ex">
+         <obj_property name="ElementShortName">mult_en_ex</obj_property>
+         <obj_property name="ObjectShortName">mult_en_ex</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/div_en_ex">
+         <obj_property name="ElementShortName">div_en_ex</obj_property>
+         <obj_property name="ObjectShortName">div_en_ex</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/multdiv_operator_ex">
+         <obj_property name="ElementShortName">multdiv_operator_ex[1:0]</obj_property>
+         <obj_property name="ObjectShortName">multdiv_operator_ex[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/multdiv_signed_mode_ex">
+         <obj_property name="ElementShortName">multdiv_signed_mode_ex[1:0]</obj_property>
+         <obj_property name="ObjectShortName">multdiv_signed_mode_ex[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/multdiv_operand_a_ex">
+         <obj_property name="ElementShortName">multdiv_operand_a_ex[31:0]</obj_property>
+         <obj_property name="ObjectShortName">multdiv_operand_a_ex[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/multdiv_operand_b_ex">
+         <obj_property name="ElementShortName">multdiv_operand_b_ex[31:0]</obj_property>
+         <obj_property name="ObjectShortName">multdiv_operand_b_ex[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/csr_access">
+         <obj_property name="ElementShortName">csr_access</obj_property>
+         <obj_property name="ObjectShortName">csr_access</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/valid_csr_id">
+         <obj_property name="ElementShortName">valid_csr_id</obj_property>
+         <obj_property name="ObjectShortName">valid_csr_id</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/csr_op">
+         <obj_property name="ElementShortName">csr_op[1:0]</obj_property>
+         <obj_property name="ObjectShortName">csr_op[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/csr_addr">
+         <obj_property name="ElementShortName">csr_addr[11:0]</obj_property>
+         <obj_property name="ObjectShortName">csr_addr[11:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/csr_rdata">
+         <obj_property name="ElementShortName">csr_rdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">csr_rdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/csr_wdata">
+         <obj_property name="ElementShortName">csr_wdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">csr_wdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/illegal_csr_insn_id">
+         <obj_property name="ElementShortName">illegal_csr_insn_id</obj_property>
+         <obj_property name="ObjectShortName">illegal_csr_insn_id</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/data_we_ex">
+         <obj_property name="ElementShortName">data_we_ex</obj_property>
+         <obj_property name="ObjectShortName">data_we_ex</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/data_type_ex">
+         <obj_property name="ElementShortName">data_type_ex[1:0]</obj_property>
+         <obj_property name="ObjectShortName">data_type_ex[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/data_sign_ext_ex">
+         <obj_property name="ElementShortName">data_sign_ext_ex</obj_property>
+         <obj_property name="ObjectShortName">data_sign_ext_ex</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/data_req_ex">
+         <obj_property name="ElementShortName">data_req_ex</obj_property>
+         <obj_property name="ObjectShortName">data_req_ex</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/data_wdata_ex">
+         <obj_property name="ElementShortName">data_wdata_ex[31:0]</obj_property>
+         <obj_property name="ObjectShortName">data_wdata_ex[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/regfile_wdata_lsu">
+         <obj_property name="ElementShortName">regfile_wdata_lsu[31:0]</obj_property>
+         <obj_property name="ObjectShortName">regfile_wdata_lsu[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/id_in_ready">
+         <obj_property name="ElementShortName">id_in_ready</obj_property>
+         <obj_property name="ObjectShortName">id_in_ready</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/ex_valid">
+         <obj_property name="ElementShortName">ex_valid</obj_property>
+         <obj_property name="ObjectShortName">ex_valid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/lsu_data_valid">
+         <obj_property name="ElementShortName">lsu_data_valid</obj_property>
+         <obj_property name="ObjectShortName">lsu_data_valid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/instr_req_int">
+         <obj_property name="ElementShortName">instr_req_int</obj_property>
+         <obj_property name="ObjectShortName">instr_req_int</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/irq_pending">
+         <obj_property name="ElementShortName">irq_pending</obj_property>
+         <obj_property name="ObjectShortName">irq_pending</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/csr_msip">
+         <obj_property name="ElementShortName">csr_msip</obj_property>
+         <obj_property name="ObjectShortName">csr_msip</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/csr_mtip">
+         <obj_property name="ElementShortName">csr_mtip</obj_property>
+         <obj_property name="ObjectShortName">csr_mtip</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/csr_meip">
+         <obj_property name="ElementShortName">csr_meip</obj_property>
+         <obj_property name="ObjectShortName">csr_meip</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/csr_mfip">
+         <obj_property name="ElementShortName">csr_mfip[14:0]</obj_property>
+         <obj_property name="ObjectShortName">csr_mfip[14:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/csr_mstatus_mie">
+         <obj_property name="ElementShortName">csr_mstatus_mie</obj_property>
+         <obj_property name="ObjectShortName">csr_mstatus_mie</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/csr_mepc">
+         <obj_property name="ElementShortName">csr_mepc[31:0]</obj_property>
+         <obj_property name="ObjectShortName">csr_mepc[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/csr_depc">
+         <obj_property name="ElementShortName">csr_depc[31:0]</obj_property>
+         <obj_property name="ObjectShortName">csr_depc[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/csr_pmp_addr">
+         <obj_property name="ElementShortName">csr_pmp_addr[0:3][33:0]</obj_property>
+         <obj_property name="ObjectShortName">csr_pmp_addr[0:3][33:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/csr_pmp_cfg">
+         <obj_property name="ElementShortName">csr_pmp_cfg[0:3]</obj_property>
+         <obj_property name="ObjectShortName">csr_pmp_cfg[0:3]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/pmp_req_err">
+         <obj_property name="ElementShortName">pmp_req_err[0:1]</obj_property>
+         <obj_property name="ObjectShortName">pmp_req_err[0:1]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/instr_req_out">
+         <obj_property name="ElementShortName">instr_req_out</obj_property>
+         <obj_property name="ObjectShortName">instr_req_out</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/data_req_out">
+         <obj_property name="ElementShortName">data_req_out</obj_property>
+         <obj_property name="ObjectShortName">data_req_out</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/csr_save_if">
+         <obj_property name="ElementShortName">csr_save_if</obj_property>
+         <obj_property name="ObjectShortName">csr_save_if</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/csr_save_id">
+         <obj_property name="ElementShortName">csr_save_id</obj_property>
+         <obj_property name="ObjectShortName">csr_save_id</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/csr_restore_mret_id">
+         <obj_property name="ElementShortName">csr_restore_mret_id</obj_property>
+         <obj_property name="ObjectShortName">csr_restore_mret_id</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/csr_restore_dret_id">
+         <obj_property name="ElementShortName">csr_restore_dret_id</obj_property>
+         <obj_property name="ObjectShortName">csr_restore_dret_id</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/csr_save_cause">
+         <obj_property name="ElementShortName">csr_save_cause</obj_property>
+         <obj_property name="ObjectShortName">csr_save_cause</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/csr_mtvec_init">
+         <obj_property name="ElementShortName">csr_mtvec_init</obj_property>
+         <obj_property name="ObjectShortName">csr_mtvec_init</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/csr_mtvec">
+         <obj_property name="ElementShortName">csr_mtvec[31:0]</obj_property>
+         <obj_property name="ObjectShortName">csr_mtvec[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/csr_mtval">
+         <obj_property name="ElementShortName">csr_mtval[31:0]</obj_property>
+         <obj_property name="ObjectShortName">csr_mtval[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/csr_mstatus_tw">
+         <obj_property name="ElementShortName">csr_mstatus_tw</obj_property>
+         <obj_property name="ObjectShortName">csr_mstatus_tw</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/priv_mode_id">
+         <obj_property name="ElementShortName">priv_mode_id[1:0]</obj_property>
+         <obj_property name="ObjectShortName">priv_mode_id[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/priv_mode_if">
+         <obj_property name="ElementShortName">priv_mode_if[1:0]</obj_property>
+         <obj_property name="ObjectShortName">priv_mode_if[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/priv_mode_lsu">
+         <obj_property name="ElementShortName">priv_mode_lsu[1:0]</obj_property>
+         <obj_property name="ObjectShortName">priv_mode_lsu[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/debug_mode">
+         <obj_property name="ElementShortName">debug_mode</obj_property>
+         <obj_property name="ObjectShortName">debug_mode</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/debug_cause">
+         <obj_property name="ElementShortName">debug_cause[2:0]</obj_property>
+         <obj_property name="ObjectShortName">debug_cause[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/debug_csr_save">
+         <obj_property name="ElementShortName">debug_csr_save</obj_property>
+         <obj_property name="ObjectShortName">debug_csr_save</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/debug_single_step">
+         <obj_property name="ElementShortName">debug_single_step</obj_property>
+         <obj_property name="ObjectShortName">debug_single_step</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/debug_ebreakm">
+         <obj_property name="ElementShortName">debug_ebreakm</obj_property>
+         <obj_property name="ObjectShortName">debug_ebreakm</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/debug_ebreaku">
+         <obj_property name="ElementShortName">debug_ebreaku</obj_property>
+         <obj_property name="ObjectShortName">debug_ebreaku</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/instr_ret">
+         <obj_property name="ElementShortName">instr_ret</obj_property>
+         <obj_property name="ObjectShortName">instr_ret</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/instr_ret_compressed">
+         <obj_property name="ElementShortName">instr_ret_compressed</obj_property>
+         <obj_property name="ObjectShortName">instr_ret_compressed</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/perf_imiss">
+         <obj_property name="ElementShortName">perf_imiss</obj_property>
+         <obj_property name="ObjectShortName">perf_imiss</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/perf_jump">
+         <obj_property name="ElementShortName">perf_jump</obj_property>
+         <obj_property name="ObjectShortName">perf_jump</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/perf_branch">
+         <obj_property name="ElementShortName">perf_branch</obj_property>
+         <obj_property name="ObjectShortName">perf_branch</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/perf_tbranch">
+         <obj_property name="ElementShortName">perf_tbranch</obj_property>
+         <obj_property name="ObjectShortName">perf_tbranch</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/perf_load">
+         <obj_property name="ElementShortName">perf_load</obj_property>
+         <obj_property name="ObjectShortName">perf_load</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/perf_store">
+         <obj_property name="ElementShortName">perf_store</obj_property>
+         <obj_property name="ObjectShortName">perf_store</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/illegal_insn_id">
+         <obj_property name="ElementShortName">illegal_insn_id</obj_property>
+         <obj_property name="ObjectShortName">illegal_insn_id</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/unused_illegal_insn_id">
+         <obj_property name="ElementShortName">unused_illegal_insn_id</obj_property>
+         <obj_property name="ObjectShortName">unused_illegal_insn_id</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/clk">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/clock_en">
+         <obj_property name="ElementShortName">clock_en</obj_property>
+         <obj_property name="ObjectShortName">clock_en</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/\g_no_pmp.unused_priv_lvl_if ">
+         <obj_property name="ElementShortName">\g_no_pmp.unused_priv_lvl_if [1:0]</obj_property>
+         <obj_property name="ObjectShortName">\g_no_pmp.unused_priv_lvl_if [1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/\g_no_pmp.unused_priv_lvl_ls ">
+         <obj_property name="ElementShortName">\g_no_pmp.unused_priv_lvl_ls [1:0]</obj_property>
+         <obj_property name="ObjectShortName">\g_no_pmp.unused_priv_lvl_ls [1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/\g_no_pmp.unused_csr_pmp_addr ">
+         <obj_property name="ElementShortName">\g_no_pmp.unused_csr_pmp_addr [0:3][33:0]</obj_property>
+         <obj_property name="ObjectShortName">\g_no_pmp.unused_csr_pmp_addr [0:3][33:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/\g_no_pmp.unused_csr_pmp_cfg ">
+         <obj_property name="ElementShortName">\g_no_pmp.unused_csr_pmp_cfg [0:3]</obj_property>
+         <obj_property name="ObjectShortName">\g_no_pmp.unused_csr_pmp_cfg [0:3]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/PMPEnable">
+         <obj_property name="ElementShortName">PMPEnable</obj_property>
+         <obj_property name="ObjectShortName">PMPEnable</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/PMPGranularity">
+         <obj_property name="ElementShortName">PMPGranularity[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PMPGranularity[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/PMPNumRegions">
+         <obj_property name="ElementShortName">PMPNumRegions[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PMPNumRegions[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/MHPMCounterNum">
+         <obj_property name="ElementShortName">MHPMCounterNum[31:0]</obj_property>
+         <obj_property name="ObjectShortName">MHPMCounterNum[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/MHPMCounterWidth">
+         <obj_property name="ElementShortName">MHPMCounterWidth[31:0]</obj_property>
+         <obj_property name="ObjectShortName">MHPMCounterWidth[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/RV32E">
+         <obj_property name="ElementShortName">RV32E</obj_property>
+         <obj_property name="ObjectShortName">RV32E</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/RV32M">
+         <obj_property name="ElementShortName">RV32M</obj_property>
+         <obj_property name="ObjectShortName">RV32M</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/MultiplierImplementation">
+         <obj_property name="ElementShortName">MultiplierImplementation[31:0]</obj_property>
+         <obj_property name="ObjectShortName">MultiplierImplementation[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/DmHaltAddr">
+         <obj_property name="ElementShortName">DmHaltAddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DmHaltAddr[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/DmExceptionAddr">
+         <obj_property name="ElementShortName">DmExceptionAddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DmExceptionAddr[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/PMP_NUM_CHAN">
+         <obj_property name="ElementShortName">PMP_NUM_CHAN[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PMP_NUM_CHAN[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group1563">
+      <obj_property name="label">itcm_axi</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/axi_aclk">
+         <obj_property name="ElementShortName">axi_aclk</obj_property>
+         <obj_property name="ObjectShortName">axi_aclk</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/axi_aresetn">
+         <obj_property name="ElementShortName">axi_aresetn</obj_property>
+         <obj_property name="ObjectShortName">axi_aresetn</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sa_axi_awid">
+         <obj_property name="ElementShortName">sa_axi_awid[11:0]</obj_property>
+         <obj_property name="ObjectShortName">sa_axi_awid[11:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sa_axi_awaddr">
+         <obj_property name="ElementShortName">sa_axi_awaddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">sa_axi_awaddr[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sa_axi_awlen">
+         <obj_property name="ElementShortName">sa_axi_awlen[7:0]</obj_property>
+         <obj_property name="ObjectShortName">sa_axi_awlen[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sa_axi_awsize">
+         <obj_property name="ElementShortName">sa_axi_awsize[2:0]</obj_property>
+         <obj_property name="ObjectShortName">sa_axi_awsize[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sa_axi_awburst">
+         <obj_property name="ElementShortName">sa_axi_awburst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">sa_axi_awburst[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sa_axi_awlock">
+         <obj_property name="ElementShortName">sa_axi_awlock[0:0]</obj_property>
+         <obj_property name="ObjectShortName">sa_axi_awlock[0:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sa_axi_awcache">
+         <obj_property name="ElementShortName">sa_axi_awcache[3:0]</obj_property>
+         <obj_property name="ObjectShortName">sa_axi_awcache[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sa_axi_awprot">
+         <obj_property name="ElementShortName">sa_axi_awprot[2:0]</obj_property>
+         <obj_property name="ObjectShortName">sa_axi_awprot[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sa_axi_awregion">
+         <obj_property name="ElementShortName">sa_axi_awregion[3:0]</obj_property>
+         <obj_property name="ObjectShortName">sa_axi_awregion[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sa_axi_awqos">
+         <obj_property name="ElementShortName">sa_axi_awqos[3:0]</obj_property>
+         <obj_property name="ObjectShortName">sa_axi_awqos[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sa_axi_awuser">
+         <obj_property name="ElementShortName">sa_axi_awuser[3:0]</obj_property>
+         <obj_property name="ObjectShortName">sa_axi_awuser[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sa_axi_awvalid">
+         <obj_property name="ElementShortName">sa_axi_awvalid</obj_property>
+         <obj_property name="ObjectShortName">sa_axi_awvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sa_axi_awready">
+         <obj_property name="ElementShortName">sa_axi_awready</obj_property>
+         <obj_property name="ObjectShortName">sa_axi_awready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sa_axi_wdata">
+         <obj_property name="ElementShortName">sa_axi_wdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">sa_axi_wdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sa_axi_wstrb">
+         <obj_property name="ElementShortName">sa_axi_wstrb[7:0]</obj_property>
+         <obj_property name="ObjectShortName">sa_axi_wstrb[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sa_axi_wlast">
+         <obj_property name="ElementShortName">sa_axi_wlast</obj_property>
+         <obj_property name="ObjectShortName">sa_axi_wlast</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sa_axi_wuser">
+         <obj_property name="ElementShortName">sa_axi_wuser[3:0]</obj_property>
+         <obj_property name="ObjectShortName">sa_axi_wuser[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sa_axi_wvalid">
+         <obj_property name="ElementShortName">sa_axi_wvalid</obj_property>
+         <obj_property name="ObjectShortName">sa_axi_wvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sa_axi_wready">
+         <obj_property name="ElementShortName">sa_axi_wready</obj_property>
+         <obj_property name="ObjectShortName">sa_axi_wready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sa_axi_bid">
+         <obj_property name="ElementShortName">sa_axi_bid[11:0]</obj_property>
+         <obj_property name="ObjectShortName">sa_axi_bid[11:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sa_axi_bresp">
+         <obj_property name="ElementShortName">sa_axi_bresp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">sa_axi_bresp[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sa_axi_buser">
+         <obj_property name="ElementShortName">sa_axi_buser[3:0]</obj_property>
+         <obj_property name="ObjectShortName">sa_axi_buser[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sa_axi_bvalid">
+         <obj_property name="ElementShortName">sa_axi_bvalid</obj_property>
+         <obj_property name="ObjectShortName">sa_axi_bvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sa_axi_bready">
+         <obj_property name="ElementShortName">sa_axi_bready</obj_property>
+         <obj_property name="ObjectShortName">sa_axi_bready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sa_axi_arid">
+         <obj_property name="ElementShortName">sa_axi_arid[11:0]</obj_property>
+         <obj_property name="ObjectShortName">sa_axi_arid[11:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sa_axi_araddr">
+         <obj_property name="ElementShortName">sa_axi_araddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">sa_axi_araddr[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sa_axi_arlen">
+         <obj_property name="ElementShortName">sa_axi_arlen[7:0]</obj_property>
+         <obj_property name="ObjectShortName">sa_axi_arlen[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sa_axi_arsize">
+         <obj_property name="ElementShortName">sa_axi_arsize[2:0]</obj_property>
+         <obj_property name="ObjectShortName">sa_axi_arsize[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sa_axi_arburst">
+         <obj_property name="ElementShortName">sa_axi_arburst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">sa_axi_arburst[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sa_axi_arlock">
+         <obj_property name="ElementShortName">sa_axi_arlock[0:0]</obj_property>
+         <obj_property name="ObjectShortName">sa_axi_arlock[0:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sa_axi_arcache">
+         <obj_property name="ElementShortName">sa_axi_arcache[3:0]</obj_property>
+         <obj_property name="ObjectShortName">sa_axi_arcache[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sa_axi_arprot">
+         <obj_property name="ElementShortName">sa_axi_arprot[2:0]</obj_property>
+         <obj_property name="ObjectShortName">sa_axi_arprot[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sa_axi_arregion">
+         <obj_property name="ElementShortName">sa_axi_arregion[3:0]</obj_property>
+         <obj_property name="ObjectShortName">sa_axi_arregion[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sa_axi_arqos">
+         <obj_property name="ElementShortName">sa_axi_arqos[3:0]</obj_property>
+         <obj_property name="ObjectShortName">sa_axi_arqos[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sa_axi_aruser">
+         <obj_property name="ElementShortName">sa_axi_aruser[3:0]</obj_property>
+         <obj_property name="ObjectShortName">sa_axi_aruser[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sa_axi_arvalid">
+         <obj_property name="ElementShortName">sa_axi_arvalid</obj_property>
+         <obj_property name="ObjectShortName">sa_axi_arvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sa_axi_arready">
+         <obj_property name="ElementShortName">sa_axi_arready</obj_property>
+         <obj_property name="ObjectShortName">sa_axi_arready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sa_axi_rid">
+         <obj_property name="ElementShortName">sa_axi_rid[11:0]</obj_property>
+         <obj_property name="ObjectShortName">sa_axi_rid[11:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sa_axi_rdata">
+         <obj_property name="ElementShortName">sa_axi_rdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">sa_axi_rdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sa_axi_rresp">
+         <obj_property name="ElementShortName">sa_axi_rresp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">sa_axi_rresp[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sa_axi_rlast">
+         <obj_property name="ElementShortName">sa_axi_rlast</obj_property>
+         <obj_property name="ObjectShortName">sa_axi_rlast</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sa_axi_ruser">
+         <obj_property name="ElementShortName">sa_axi_ruser[3:0]</obj_property>
+         <obj_property name="ObjectShortName">sa_axi_ruser[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sa_axi_rvalid">
+         <obj_property name="ElementShortName">sa_axi_rvalid</obj_property>
+         <obj_property name="ObjectShortName">sa_axi_rvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sa_axi_rready">
+         <obj_property name="ElementShortName">sa_axi_rready</obj_property>
+         <obj_property name="ObjectShortName">sa_axi_rready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sb_axi_awid">
+         <obj_property name="ElementShortName">sb_axi_awid[11:0]</obj_property>
+         <obj_property name="ObjectShortName">sb_axi_awid[11:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sb_axi_awaddr">
+         <obj_property name="ElementShortName">sb_axi_awaddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">sb_axi_awaddr[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sb_axi_awlen">
+         <obj_property name="ElementShortName">sb_axi_awlen[7:0]</obj_property>
+         <obj_property name="ObjectShortName">sb_axi_awlen[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sb_axi_awsize">
+         <obj_property name="ElementShortName">sb_axi_awsize[2:0]</obj_property>
+         <obj_property name="ObjectShortName">sb_axi_awsize[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sb_axi_awburst">
+         <obj_property name="ElementShortName">sb_axi_awburst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">sb_axi_awburst[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sb_axi_awlock">
+         <obj_property name="ElementShortName">sb_axi_awlock[0:0]</obj_property>
+         <obj_property name="ObjectShortName">sb_axi_awlock[0:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sb_axi_awcache">
+         <obj_property name="ElementShortName">sb_axi_awcache[3:0]</obj_property>
+         <obj_property name="ObjectShortName">sb_axi_awcache[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sb_axi_awprot">
+         <obj_property name="ElementShortName">sb_axi_awprot[2:0]</obj_property>
+         <obj_property name="ObjectShortName">sb_axi_awprot[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sb_axi_awregion">
+         <obj_property name="ElementShortName">sb_axi_awregion[3:0]</obj_property>
+         <obj_property name="ObjectShortName">sb_axi_awregion[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sb_axi_awqos">
+         <obj_property name="ElementShortName">sb_axi_awqos[3:0]</obj_property>
+         <obj_property name="ObjectShortName">sb_axi_awqos[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sb_axi_awuser">
+         <obj_property name="ElementShortName">sb_axi_awuser[3:0]</obj_property>
+         <obj_property name="ObjectShortName">sb_axi_awuser[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sb_axi_awvalid">
+         <obj_property name="ElementShortName">sb_axi_awvalid</obj_property>
+         <obj_property name="ObjectShortName">sb_axi_awvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sb_axi_awready">
+         <obj_property name="ElementShortName">sb_axi_awready</obj_property>
+         <obj_property name="ObjectShortName">sb_axi_awready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sb_axi_wdata">
+         <obj_property name="ElementShortName">sb_axi_wdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">sb_axi_wdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sb_axi_wstrb">
+         <obj_property name="ElementShortName">sb_axi_wstrb[7:0]</obj_property>
+         <obj_property name="ObjectShortName">sb_axi_wstrb[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sb_axi_wlast">
+         <obj_property name="ElementShortName">sb_axi_wlast</obj_property>
+         <obj_property name="ObjectShortName">sb_axi_wlast</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sb_axi_wuser">
+         <obj_property name="ElementShortName">sb_axi_wuser[3:0]</obj_property>
+         <obj_property name="ObjectShortName">sb_axi_wuser[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sb_axi_wvalid">
+         <obj_property name="ElementShortName">sb_axi_wvalid</obj_property>
+         <obj_property name="ObjectShortName">sb_axi_wvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sb_axi_wready">
+         <obj_property name="ElementShortName">sb_axi_wready</obj_property>
+         <obj_property name="ObjectShortName">sb_axi_wready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sb_axi_bid">
+         <obj_property name="ElementShortName">sb_axi_bid[11:0]</obj_property>
+         <obj_property name="ObjectShortName">sb_axi_bid[11:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sb_axi_bresp">
+         <obj_property name="ElementShortName">sb_axi_bresp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">sb_axi_bresp[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sb_axi_buser">
+         <obj_property name="ElementShortName">sb_axi_buser[3:0]</obj_property>
+         <obj_property name="ObjectShortName">sb_axi_buser[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sb_axi_bvalid">
+         <obj_property name="ElementShortName">sb_axi_bvalid</obj_property>
+         <obj_property name="ObjectShortName">sb_axi_bvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sb_axi_bready">
+         <obj_property name="ElementShortName">sb_axi_bready</obj_property>
+         <obj_property name="ObjectShortName">sb_axi_bready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sb_axi_arid">
+         <obj_property name="ElementShortName">sb_axi_arid[11:0]</obj_property>
+         <obj_property name="ObjectShortName">sb_axi_arid[11:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sb_axi_araddr">
+         <obj_property name="ElementShortName">sb_axi_araddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">sb_axi_araddr[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sb_axi_arlen">
+         <obj_property name="ElementShortName">sb_axi_arlen[7:0]</obj_property>
+         <obj_property name="ObjectShortName">sb_axi_arlen[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sb_axi_arsize">
+         <obj_property name="ElementShortName">sb_axi_arsize[2:0]</obj_property>
+         <obj_property name="ObjectShortName">sb_axi_arsize[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sb_axi_arburst">
+         <obj_property name="ElementShortName">sb_axi_arburst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">sb_axi_arburst[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sb_axi_arlock">
+         <obj_property name="ElementShortName">sb_axi_arlock[0:0]</obj_property>
+         <obj_property name="ObjectShortName">sb_axi_arlock[0:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sb_axi_arcache">
+         <obj_property name="ElementShortName">sb_axi_arcache[3:0]</obj_property>
+         <obj_property name="ObjectShortName">sb_axi_arcache[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sb_axi_arprot">
+         <obj_property name="ElementShortName">sb_axi_arprot[2:0]</obj_property>
+         <obj_property name="ObjectShortName">sb_axi_arprot[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sb_axi_arregion">
+         <obj_property name="ElementShortName">sb_axi_arregion[3:0]</obj_property>
+         <obj_property name="ObjectShortName">sb_axi_arregion[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sb_axi_arqos">
+         <obj_property name="ElementShortName">sb_axi_arqos[3:0]</obj_property>
+         <obj_property name="ObjectShortName">sb_axi_arqos[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sb_axi_aruser">
+         <obj_property name="ElementShortName">sb_axi_aruser[3:0]</obj_property>
+         <obj_property name="ObjectShortName">sb_axi_aruser[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sb_axi_arvalid">
+         <obj_property name="ElementShortName">sb_axi_arvalid</obj_property>
+         <obj_property name="ObjectShortName">sb_axi_arvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sb_axi_arready">
+         <obj_property name="ElementShortName">sb_axi_arready</obj_property>
+         <obj_property name="ObjectShortName">sb_axi_arready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sb_axi_rid">
+         <obj_property name="ElementShortName">sb_axi_rid[11:0]</obj_property>
+         <obj_property name="ObjectShortName">sb_axi_rid[11:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sb_axi_rdata">
+         <obj_property name="ElementShortName">sb_axi_rdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">sb_axi_rdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sb_axi_rresp">
+         <obj_property name="ElementShortName">sb_axi_rresp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">sb_axi_rresp[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sb_axi_rlast">
+         <obj_property name="ElementShortName">sb_axi_rlast</obj_property>
+         <obj_property name="ObjectShortName">sb_axi_rlast</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sb_axi_ruser">
+         <obj_property name="ElementShortName">sb_axi_ruser[3:0]</obj_property>
+         <obj_property name="ObjectShortName">sb_axi_ruser[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sb_axi_rvalid">
+         <obj_property name="ElementShortName">sb_axi_rvalid</obj_property>
+         <obj_property name="ObjectShortName">sb_axi_rvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/sb_axi_rready">
+         <obj_property name="ElementShortName">sb_axi_rready</obj_property>
+         <obj_property name="ObjectShortName">sb_axi_rready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/addra">
+         <obj_property name="ElementShortName">addra[31:0]</obj_property>
+         <obj_property name="ObjectShortName">addra[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/douta">
+         <obj_property name="ElementShortName">douta[31:0]</obj_property>
+         <obj_property name="ObjectShortName">douta[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/dina">
+         <obj_property name="ElementShortName">dina[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dina[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/ena">
+         <obj_property name="ElementShortName">ena</obj_property>
+         <obj_property name="ObjectShortName">ena</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/wea">
+         <obj_property name="ElementShortName">wea[3:0]</obj_property>
+         <obj_property name="ObjectShortName">wea[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/addrb">
+         <obj_property name="ElementShortName">addrb[31:0]</obj_property>
+         <obj_property name="ObjectShortName">addrb[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/doutb">
+         <obj_property name="ElementShortName">doutb[31:0]</obj_property>
+         <obj_property name="ObjectShortName">doutb[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/dinb">
+         <obj_property name="ElementShortName">dinb[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dinb[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/enb">
+         <obj_property name="ElementShortName">enb</obj_property>
+         <obj_property name="ObjectShortName">enb</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/web">
+         <obj_property name="ElementShortName">web[3:0]</obj_property>
+         <obj_property name="ObjectShortName">web[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/req_o_0">
+         <obj_property name="ElementShortName">req_o_0</obj_property>
+         <obj_property name="ObjectShortName">req_o_0</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/we_o_0">
+         <obj_property name="ElementShortName">we_o_0</obj_property>
+         <obj_property name="ObjectShortName">we_o_0</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/addr_o_0">
+         <obj_property name="ElementShortName">addr_o_0[31:0]</obj_property>
+         <obj_property name="ObjectShortName">addr_o_0[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/be_o_0">
+         <obj_property name="ElementShortName">be_o_0[3:0]</obj_property>
+         <obj_property name="ObjectShortName">be_o_0[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/data_o_0">
+         <obj_property name="ElementShortName">data_o_0[31:0]</obj_property>
+         <obj_property name="ObjectShortName">data_o_0[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/data_i_0">
+         <obj_property name="ElementShortName">data_i_0[31:0]</obj_property>
+         <obj_property name="ObjectShortName">data_i_0[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/req_o_1">
+         <obj_property name="ElementShortName">req_o_1</obj_property>
+         <obj_property name="ObjectShortName">req_o_1</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/we_o_1">
+         <obj_property name="ElementShortName">we_o_1</obj_property>
+         <obj_property name="ObjectShortName">we_o_1</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/addr_o_1">
+         <obj_property name="ElementShortName">addr_o_1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">addr_o_1[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/be_o_1">
+         <obj_property name="ElementShortName">be_o_1[3:0]</obj_property>
+         <obj_property name="ObjectShortName">be_o_1[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/data_o_1">
+         <obj_property name="ElementShortName">data_o_1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">data_o_1[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/data_i_1">
+         <obj_property name="ElementShortName">data_i_1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">data_i_1[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/AXI_ADDR_WIDTH">
+         <obj_property name="ElementShortName">AXI_ADDR_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">AXI_ADDR_WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/AXI_DATA_WIDTH">
+         <obj_property name="ElementShortName">AXI_DATA_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">AXI_DATA_WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/AXI_ID_WIDTH">
+         <obj_property name="ElementShortName">AXI_ID_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">AXI_ID_WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/AXI_USER_WIDTH">
+         <obj_property name="ElementShortName">AXI_USER_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">AXI_USER_WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/AXI_STRB_WIDTH">
+         <obj_property name="ElementShortName">AXI_STRB_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">AXI_STRB_WIDTH[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group698">
+      <obj_property name="label">itcm</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/blk_itcm/clka">
+         <obj_property name="ElementShortName">clka</obj_property>
+         <obj_property name="ObjectShortName">clka</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/blk_itcm/ena">
+         <obj_property name="ElementShortName">ena</obj_property>
+         <obj_property name="ObjectShortName">ena</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/blk_itcm/wea">
+         <obj_property name="ElementShortName">wea[3:0]</obj_property>
+         <obj_property name="ObjectShortName">wea[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/blk_itcm/addra">
+         <obj_property name="ElementShortName">addra[31:0]</obj_property>
+         <obj_property name="ObjectShortName">addra[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/blk_itcm/dina">
+         <obj_property name="ElementShortName">dina[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dina[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/blk_itcm/douta">
+         <obj_property name="ElementShortName">douta[31:0]</obj_property>
+         <obj_property name="ObjectShortName">douta[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/blk_itcm/clkb">
+         <obj_property name="ElementShortName">clkb</obj_property>
+         <obj_property name="ObjectShortName">clkb</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/blk_itcm/enb">
+         <obj_property name="ElementShortName">enb</obj_property>
+         <obj_property name="ObjectShortName">enb</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/blk_itcm/web">
+         <obj_property name="ElementShortName">web[3:0]</obj_property>
+         <obj_property name="ObjectShortName">web[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/blk_itcm/addrb">
+         <obj_property name="ElementShortName">addrb[31:0]</obj_property>
+         <obj_property name="ObjectShortName">addrb[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/blk_itcm/dinb">
+         <obj_property name="ElementShortName">dinb[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dinb[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/blk_itcm/doutb">
+         <obj_property name="ElementShortName">doutb[31:0]</obj_property>
+         <obj_property name="ObjectShortName">doutb[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group2278">
+      <obj_property name="label">dtcm_ctl</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/axi_bram_ctrl_0/s_axi_aclk">
+         <obj_property name="ElementShortName">s_axi_aclk</obj_property>
+         <obj_property name="ObjectShortName">s_axi_aclk</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/axi_bram_ctrl_0/s_axi_aresetn">
+         <obj_property name="ElementShortName">s_axi_aresetn</obj_property>
+         <obj_property name="ObjectShortName">s_axi_aresetn</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/axi_bram_ctrl_0/s_axi_awaddr">
+         <obj_property name="ElementShortName">s_axi_awaddr[15:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_awaddr[15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/axi_bram_ctrl_0/s_axi_awlen">
+         <obj_property name="ElementShortName">s_axi_awlen[7:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_awlen[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/axi_bram_ctrl_0/s_axi_awsize">
+         <obj_property name="ElementShortName">s_axi_awsize[2:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_awsize[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/axi_bram_ctrl_0/s_axi_awburst">
+         <obj_property name="ElementShortName">s_axi_awburst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_awburst[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/axi_bram_ctrl_0/s_axi_awlock">
+         <obj_property name="ElementShortName">s_axi_awlock</obj_property>
+         <obj_property name="ObjectShortName">s_axi_awlock</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/axi_bram_ctrl_0/s_axi_awcache">
+         <obj_property name="ElementShortName">s_axi_awcache[3:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_awcache[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/axi_bram_ctrl_0/s_axi_awprot">
+         <obj_property name="ElementShortName">s_axi_awprot[2:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_awprot[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/axi_bram_ctrl_0/s_axi_awvalid">
+         <obj_property name="ElementShortName">s_axi_awvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axi_awvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/axi_bram_ctrl_0/s_axi_awready">
+         <obj_property name="ElementShortName">s_axi_awready</obj_property>
+         <obj_property name="ObjectShortName">s_axi_awready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/axi_bram_ctrl_0/s_axi_wdata">
+         <obj_property name="ElementShortName">s_axi_wdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_wdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/axi_bram_ctrl_0/s_axi_wstrb">
+         <obj_property name="ElementShortName">s_axi_wstrb[3:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_wstrb[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/axi_bram_ctrl_0/s_axi_wlast">
+         <obj_property name="ElementShortName">s_axi_wlast</obj_property>
+         <obj_property name="ObjectShortName">s_axi_wlast</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/axi_bram_ctrl_0/s_axi_wvalid">
+         <obj_property name="ElementShortName">s_axi_wvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axi_wvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/axi_bram_ctrl_0/s_axi_wready">
+         <obj_property name="ElementShortName">s_axi_wready</obj_property>
+         <obj_property name="ObjectShortName">s_axi_wready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/axi_bram_ctrl_0/s_axi_bresp">
+         <obj_property name="ElementShortName">s_axi_bresp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_bresp[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/axi_bram_ctrl_0/s_axi_bvalid">
+         <obj_property name="ElementShortName">s_axi_bvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axi_bvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/axi_bram_ctrl_0/s_axi_bready">
+         <obj_property name="ElementShortName">s_axi_bready</obj_property>
+         <obj_property name="ObjectShortName">s_axi_bready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/axi_bram_ctrl_0/s_axi_araddr">
+         <obj_property name="ElementShortName">s_axi_araddr[15:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_araddr[15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/axi_bram_ctrl_0/s_axi_arlen">
+         <obj_property name="ElementShortName">s_axi_arlen[7:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_arlen[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/axi_bram_ctrl_0/s_axi_arsize">
+         <obj_property name="ElementShortName">s_axi_arsize[2:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_arsize[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/axi_bram_ctrl_0/s_axi_arburst">
+         <obj_property name="ElementShortName">s_axi_arburst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_arburst[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/axi_bram_ctrl_0/s_axi_arlock">
+         <obj_property name="ElementShortName">s_axi_arlock</obj_property>
+         <obj_property name="ObjectShortName">s_axi_arlock</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/axi_bram_ctrl_0/s_axi_arcache">
+         <obj_property name="ElementShortName">s_axi_arcache[3:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_arcache[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/axi_bram_ctrl_0/s_axi_arprot">
+         <obj_property name="ElementShortName">s_axi_arprot[2:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_arprot[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/axi_bram_ctrl_0/s_axi_arvalid">
+         <obj_property name="ElementShortName">s_axi_arvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axi_arvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/axi_bram_ctrl_0/s_axi_arready">
+         <obj_property name="ElementShortName">s_axi_arready</obj_property>
+         <obj_property name="ObjectShortName">s_axi_arready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/axi_bram_ctrl_0/s_axi_rdata">
+         <obj_property name="ElementShortName">s_axi_rdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_rdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/axi_bram_ctrl_0/s_axi_rresp">
+         <obj_property name="ElementShortName">s_axi_rresp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_rresp[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/axi_bram_ctrl_0/s_axi_rlast">
+         <obj_property name="ElementShortName">s_axi_rlast</obj_property>
+         <obj_property name="ObjectShortName">s_axi_rlast</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/axi_bram_ctrl_0/s_axi_rvalid">
+         <obj_property name="ElementShortName">s_axi_rvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axi_rvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/axi_bram_ctrl_0/s_axi_rready">
+         <obj_property name="ElementShortName">s_axi_rready</obj_property>
+         <obj_property name="ObjectShortName">s_axi_rready</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/axi_bram_ctrl_0/bram_rst_a">
+         <obj_property name="ElementShortName">bram_rst_a</obj_property>
+         <obj_property name="ObjectShortName">bram_rst_a</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/axi_bram_ctrl_0/bram_clk_a">
+         <obj_property name="ElementShortName">bram_clk_a</obj_property>
+         <obj_property name="ObjectShortName">bram_clk_a</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/axi_bram_ctrl_0/bram_en_a">
+         <obj_property name="ElementShortName">bram_en_a</obj_property>
+         <obj_property name="ObjectShortName">bram_en_a</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/axi_bram_ctrl_0/bram_we_a">
+         <obj_property name="ElementShortName">bram_we_a[3:0]</obj_property>
+         <obj_property name="ObjectShortName">bram_we_a[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/axi_bram_ctrl_0/bram_addr_a">
+         <obj_property name="ElementShortName">bram_addr_a[15:0]</obj_property>
+         <obj_property name="ObjectShortName">bram_addr_a[15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/axi_bram_ctrl_0/bram_wrdata_a">
+         <obj_property name="ElementShortName">bram_wrdata_a[31:0]</obj_property>
+         <obj_property name="ObjectShortName">bram_wrdata_a[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/axi_bram_ctrl_0/bram_rddata_a">
+         <obj_property name="ElementShortName">bram_rddata_a[31:0]</obj_property>
+         <obj_property name="ObjectShortName">bram_rddata_a[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/axi_bram_ctrl_0/bram_rst_b">
+         <obj_property name="ElementShortName">bram_rst_b</obj_property>
+         <obj_property name="ObjectShortName">bram_rst_b</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/axi_bram_ctrl_0/bram_clk_b">
+         <obj_property name="ElementShortName">bram_clk_b</obj_property>
+         <obj_property name="ObjectShortName">bram_clk_b</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/axi_bram_ctrl_0/bram_en_b">
+         <obj_property name="ElementShortName">bram_en_b</obj_property>
+         <obj_property name="ObjectShortName">bram_en_b</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/axi_bram_ctrl_0/bram_we_b">
+         <obj_property name="ElementShortName">bram_we_b[3:0]</obj_property>
+         <obj_property name="ObjectShortName">bram_we_b[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/axi_bram_ctrl_0/bram_addr_b">
+         <obj_property name="ElementShortName">bram_addr_b[15:0]</obj_property>
+         <obj_property name="ObjectShortName">bram_addr_b[15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/axi_bram_ctrl_0/bram_wrdata_b">
+         <obj_property name="ElementShortName">bram_wrdata_b[31:0]</obj_property>
+         <obj_property name="ObjectShortName">bram_wrdata_b[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/axi_bram_ctrl_0/bram_rddata_b">
+         <obj_property name="ElementShortName">bram_rddata_b[31:0]</obj_property>
+         <obj_property name="ObjectShortName">bram_rddata_b[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group699">
+      <obj_property name="label">dtcm</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/blk_dtcm/clka">
+         <obj_property name="ElementShortName">clka</obj_property>
+         <obj_property name="ObjectShortName">clka</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/blk_dtcm/rsta">
+         <obj_property name="ElementShortName">rsta</obj_property>
+         <obj_property name="ObjectShortName">rsta</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/blk_dtcm/ena">
+         <obj_property name="ElementShortName">ena</obj_property>
+         <obj_property name="ObjectShortName">ena</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/blk_dtcm/wea">
+         <obj_property name="ElementShortName">wea[3:0]</obj_property>
+         <obj_property name="ObjectShortName">wea[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/blk_dtcm/addra">
+         <obj_property name="ElementShortName">addra[31:0]</obj_property>
+         <obj_property name="ObjectShortName">addra[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/blk_dtcm/dina">
+         <obj_property name="ElementShortName">dina[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dina[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/blk_dtcm/douta">
+         <obj_property name="ElementShortName">douta[31:0]</obj_property>
+         <obj_property name="ObjectShortName">douta[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/blk_dtcm/clkb">
+         <obj_property name="ElementShortName">clkb</obj_property>
+         <obj_property name="ObjectShortName">clkb</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/blk_dtcm/rstb">
+         <obj_property name="ElementShortName">rstb</obj_property>
+         <obj_property name="ObjectShortName">rstb</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/blk_dtcm/enb">
+         <obj_property name="ElementShortName">enb</obj_property>
+         <obj_property name="ObjectShortName">enb</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/blk_dtcm/web">
+         <obj_property name="ElementShortName">web[3:0]</obj_property>
+         <obj_property name="ObjectShortName">web[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/blk_dtcm/addrb">
+         <obj_property name="ElementShortName">addrb[31:0]</obj_property>
+         <obj_property name="ObjectShortName">addrb[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/blk_dtcm/dinb">
+         <obj_property name="ElementShortName">dinb[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dinb[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/blk_dtcm/doutb">
+         <obj_property name="ElementShortName">doutb[31:0]</obj_property>
+         <obj_property name="ObjectShortName">doutb[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/blk_dtcm/rsta_busy">
+         <obj_property name="ElementShortName">rsta_busy</obj_property>
+         <obj_property name="ObjectShortName">rsta_busy</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/dtcm/blk_dtcm/rstb_busy">
+         <obj_property name="ElementShortName">rstb_busy</obj_property>
+         <obj_property name="ObjectShortName">rstb_busy</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group1003">
+      <obj_property name="label">core_n4_top</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group1558">
+      <obj_property name="label">clk_wiz</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/clk_wiz/clk_out1">
+         <obj_property name="ElementShortName">clk_out1</obj_property>
+         <obj_property name="ObjectShortName">clk_out1</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/clk_wiz/locked">
+         <obj_property name="ElementShortName">locked</obj_property>
+         <obj_property name="ObjectShortName">locked</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/clk_wiz/clk_in1">
+         <obj_property name="ElementShortName">clk_in1</obj_property>
+         <obj_property name="ObjectShortName">clk_in1</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group1781">
+      <obj_property name="label">axi2mem0</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/clk_i">
+         <obj_property name="ElementShortName">clk_i</obj_property>
+         <obj_property name="ObjectShortName">clk_i</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/rst_ni">
+         <obj_property name="ElementShortName">rst_ni</obj_property>
+         <obj_property name="ObjectShortName">rst_ni</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/req_o">
+         <obj_property name="ElementShortName">req_o</obj_property>
+         <obj_property name="ObjectShortName">req_o</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/we_o">
+         <obj_property name="ElementShortName">we_o</obj_property>
+         <obj_property name="ObjectShortName">we_o</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/addr_o">
+         <obj_property name="ElementShortName">addr_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">addr_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/be_o">
+         <obj_property name="ElementShortName">be_o[3:0]</obj_property>
+         <obj_property name="ObjectShortName">be_o[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/data_o">
+         <obj_property name="ElementShortName">data_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">data_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/data_i">
+         <obj_property name="ElementShortName">data_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">data_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/state_d">
+         <obj_property name="ElementShortName">state_d[2:0]</obj_property>
+         <obj_property name="ObjectShortName">state_d[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/state_q">
+         <obj_property name="ElementShortName">state_q[2:0]</obj_property>
+         <obj_property name="ObjectShortName">state_q[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/ax_req_d">
+         <obj_property name="ElementShortName">ax_req_d</obj_property>
+         <obj_property name="ObjectShortName">ax_req_d</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/ax_req_q">
+         <obj_property name="ElementShortName">ax_req_q</obj_property>
+         <obj_property name="ObjectShortName">ax_req_q</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/req_addr_d">
+         <obj_property name="ElementShortName">req_addr_d[31:0]</obj_property>
+         <obj_property name="ObjectShortName">req_addr_d[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/req_addr_q">
+         <obj_property name="ElementShortName">req_addr_q[31:0]</obj_property>
+         <obj_property name="ObjectShortName">req_addr_q[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/cnt_d">
+         <obj_property name="ElementShortName">cnt_d[7:0]</obj_property>
+         <obj_property name="ObjectShortName">cnt_d[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/cnt_q">
+         <obj_property name="ElementShortName">cnt_q[7:0]</obj_property>
+         <obj_property name="ObjectShortName">cnt_q[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/aligned_address">
+         <obj_property name="ElementShortName">aligned_address[31:0]</obj_property>
+         <obj_property name="ObjectShortName">aligned_address[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/wrap_boundary">
+         <obj_property name="ElementShortName">wrap_boundary[31:0]</obj_property>
+         <obj_property name="ObjectShortName">wrap_boundary[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/upper_wrap_boundary">
+         <obj_property name="ElementShortName">upper_wrap_boundary[31:0]</obj_property>
+         <obj_property name="ObjectShortName">upper_wrap_boundary[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/cons_addr">
+         <obj_property name="ElementShortName">cons_addr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">cons_addr[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/AXI_ID_WIDTH">
+         <obj_property name="ElementShortName">AXI_ID_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">AXI_ID_WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/AXI_ADDR_WIDTH">
+         <obj_property name="ElementShortName">AXI_ADDR_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">AXI_ADDR_WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/AXI_DATA_WIDTH">
+         <obj_property name="ElementShortName">AXI_DATA_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">AXI_DATA_WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/AXI_USER_WIDTH">
+         <obj_property name="ElementShortName">AXI_USER_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">AXI_USER_WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/LOG_NR_BYTES">
+         <obj_property name="ElementShortName">LOG_NR_BYTES[31:0]</obj_property>
+         <obj_property name="ObjectShortName">LOG_NR_BYTES[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="group" fp_name="group1807">
+         <obj_property name="label">slave</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/aw_addr">
+            <obj_property name="ElementShortName">aw_addr[31:0]</obj_property>
+            <obj_property name="ObjectShortName">aw_addr[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/aw_prot">
+            <obj_property name="ElementShortName">aw_prot[2:0]</obj_property>
+            <obj_property name="ObjectShortName">aw_prot[2:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/aw_region">
+            <obj_property name="ElementShortName">aw_region[3:0]</obj_property>
+            <obj_property name="ObjectShortName">aw_region[3:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/aw_len">
+            <obj_property name="ElementShortName">aw_len[7:0]</obj_property>
+            <obj_property name="ObjectShortName">aw_len[7:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/aw_size">
+            <obj_property name="ElementShortName">aw_size[2:0]</obj_property>
+            <obj_property name="ObjectShortName">aw_size[2:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/aw_burst">
+            <obj_property name="ElementShortName">aw_burst[1:0]</obj_property>
+            <obj_property name="ObjectShortName">aw_burst[1:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/aw_lock">
+            <obj_property name="ElementShortName">aw_lock</obj_property>
+            <obj_property name="ObjectShortName">aw_lock</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/aw_cache">
+            <obj_property name="ElementShortName">aw_cache[3:0]</obj_property>
+            <obj_property name="ObjectShortName">aw_cache[3:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/aw_qos">
+            <obj_property name="ElementShortName">aw_qos[3:0]</obj_property>
+            <obj_property name="ObjectShortName">aw_qos[3:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/aw_id">
+            <obj_property name="ElementShortName">aw_id[11:0]</obj_property>
+            <obj_property name="ObjectShortName">aw_id[11:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/aw_user">
+            <obj_property name="ElementShortName">aw_user[3:0]</obj_property>
+            <obj_property name="ObjectShortName">aw_user[3:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/aw_ready">
+            <obj_property name="ElementShortName">aw_ready</obj_property>
+            <obj_property name="ObjectShortName">aw_ready</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/aw_valid">
+            <obj_property name="ElementShortName">aw_valid</obj_property>
+            <obj_property name="ObjectShortName">aw_valid</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/ar_addr">
+            <obj_property name="ElementShortName">ar_addr[31:0]</obj_property>
+            <obj_property name="ObjectShortName">ar_addr[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/ar_prot">
+            <obj_property name="ElementShortName">ar_prot[2:0]</obj_property>
+            <obj_property name="ObjectShortName">ar_prot[2:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/ar_region">
+            <obj_property name="ElementShortName">ar_region[3:0]</obj_property>
+            <obj_property name="ObjectShortName">ar_region[3:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/ar_len">
+            <obj_property name="ElementShortName">ar_len[7:0]</obj_property>
+            <obj_property name="ObjectShortName">ar_len[7:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/ar_size">
+            <obj_property name="ElementShortName">ar_size[2:0]</obj_property>
+            <obj_property name="ObjectShortName">ar_size[2:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/ar_burst">
+            <obj_property name="ElementShortName">ar_burst[1:0]</obj_property>
+            <obj_property name="ObjectShortName">ar_burst[1:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/ar_lock">
+            <obj_property name="ElementShortName">ar_lock</obj_property>
+            <obj_property name="ObjectShortName">ar_lock</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/ar_cache">
+            <obj_property name="ElementShortName">ar_cache[3:0]</obj_property>
+            <obj_property name="ObjectShortName">ar_cache[3:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/ar_qos">
+            <obj_property name="ElementShortName">ar_qos[3:0]</obj_property>
+            <obj_property name="ObjectShortName">ar_qos[3:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/ar_id">
+            <obj_property name="ElementShortName">ar_id[11:0]</obj_property>
+            <obj_property name="ObjectShortName">ar_id[11:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/ar_user">
+            <obj_property name="ElementShortName">ar_user[3:0]</obj_property>
+            <obj_property name="ObjectShortName">ar_user[3:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/ar_ready">
+            <obj_property name="ElementShortName">ar_ready</obj_property>
+            <obj_property name="ObjectShortName">ar_ready</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/ar_valid">
+            <obj_property name="ElementShortName">ar_valid</obj_property>
+            <obj_property name="ObjectShortName">ar_valid</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/w_valid">
+            <obj_property name="ElementShortName">w_valid</obj_property>
+            <obj_property name="ObjectShortName">w_valid</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/w_data">
+            <obj_property name="ElementShortName">w_data[31:0]</obj_property>
+            <obj_property name="ObjectShortName">w_data[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/w_strb">
+            <obj_property name="ElementShortName">w_strb[3:0]</obj_property>
+            <obj_property name="ObjectShortName">w_strb[3:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/w_user">
+            <obj_property name="ElementShortName">w_user[3:0]</obj_property>
+            <obj_property name="ObjectShortName">w_user[3:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/w_last">
+            <obj_property name="ElementShortName">w_last</obj_property>
+            <obj_property name="ObjectShortName">w_last</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/w_ready">
+            <obj_property name="ElementShortName">w_ready</obj_property>
+            <obj_property name="ObjectShortName">w_ready</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/r_data">
+            <obj_property name="ElementShortName">r_data[31:0]</obj_property>
+            <obj_property name="ObjectShortName">r_data[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/r_resp">
+            <obj_property name="ElementShortName">r_resp[1:0]</obj_property>
+            <obj_property name="ObjectShortName">r_resp[1:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/r_last">
+            <obj_property name="ElementShortName">r_last</obj_property>
+            <obj_property name="ObjectShortName">r_last</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/r_id">
+            <obj_property name="ElementShortName">r_id[11:0]</obj_property>
+            <obj_property name="ObjectShortName">r_id[11:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/r_user">
+            <obj_property name="ElementShortName">r_user[3:0]</obj_property>
+            <obj_property name="ObjectShortName">r_user[3:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/r_ready">
+            <obj_property name="ElementShortName">r_ready</obj_property>
+            <obj_property name="ObjectShortName">r_ready</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/r_valid">
+            <obj_property name="ElementShortName">r_valid</obj_property>
+            <obj_property name="ObjectShortName">r_valid</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/b_resp">
+            <obj_property name="ElementShortName">b_resp[1:0]</obj_property>
+            <obj_property name="ObjectShortName">b_resp[1:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/b_id">
+            <obj_property name="ElementShortName">b_id[11:0]</obj_property>
+            <obj_property name="ObjectShortName">b_id[11:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/b_user">
+            <obj_property name="ElementShortName">b_user[3:0]</obj_property>
+            <obj_property name="ObjectShortName">b_user[3:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/b_ready">
+            <obj_property name="ElementShortName">b_ready</obj_property>
+            <obj_property name="ObjectShortName">b_ready</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/b_valid">
+            <obj_property name="ElementShortName">b_valid</obj_property>
+            <obj_property name="ObjectShortName">b_valid</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/AXI_ADDR_WIDTH">
+            <obj_property name="ElementShortName">AXI_ADDR_WIDTH[31:0]</obj_property>
+            <obj_property name="ObjectShortName">AXI_ADDR_WIDTH[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/AXI_DATA_WIDTH">
+            <obj_property name="ElementShortName">AXI_DATA_WIDTH[31:0]</obj_property>
+            <obj_property name="ObjectShortName">AXI_DATA_WIDTH[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/AXI_ID_WIDTH">
+            <obj_property name="ElementShortName">AXI_ID_WIDTH[31:0]</obj_property>
+            <obj_property name="ObjectShortName">AXI_ID_WIDTH[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/AXI_USER_WIDTH">
+            <obj_property name="ElementShortName">AXI_USER_WIDTH[31:0]</obj_property>
+            <obj_property name="ObjectShortName">AXI_USER_WIDTH[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_design_1_wrapper/inst_design_1_wrapper/design_1_i/itcm/ram_axi2_wallpaper_0/inst/inst_ram_axi2/inst_axi2mem_0/slave/AXI_STRB_WIDTH">
+            <obj_property name="ElementShortName">AXI_STRB_WIDTH[31:0]</obj_property>
+            <obj_property name="ObjectShortName">AXI_STRB_WIDTH[31:0]</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group2330">
+      <obj_property name="label">axi_periph_1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+</wave_config>

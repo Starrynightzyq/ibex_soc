@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="mmcm_n4ddr_synth_1" LaunchDir="/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/mmcm_n4ddr_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

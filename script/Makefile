@@ -24,7 +24,7 @@ release:
 
 .PHONY: remote
 remote: release
-	mv ../../ibex_soc_$(DATE).tar.gz /media/fitz/Samsung_T5/Backup/lowrisc/hardware
+	rsync -avPh ../../ibex_soc_$(DATE).tar.gz /media/fitz/Samsung_T5/Backup/lowrisc/hardware
 	ls -all /media/fitz/Samsung_T5/Backup/lowrisc/hardware
 
 .PHONY: show

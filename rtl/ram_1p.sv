@@ -105,7 +105,7 @@ endgenerate
     if (!rst_ni) begin
       rvalid_o_0 <= '0;
     end else begin
-      rvalid_o_0 <= req_i_0;
+      rvalid_o_0 <= req_i_0?req_i_0:'b0;
     end
   end
 
@@ -113,7 +113,7 @@ endgenerate
     if (!rst_ni) begin
       rvalid_o_1 <= '0;
     end else begin
-      rvalid_o_1 <= req_i_1;
+      rvalid_o_1 <= req_i_1?req_i_1:'b0;
     end
   end
 

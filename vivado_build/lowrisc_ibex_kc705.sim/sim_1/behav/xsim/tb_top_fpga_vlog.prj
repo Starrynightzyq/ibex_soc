@@ -1,0 +1,50 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  -i "../../../../" --include "../../../../../rtl/mmcm" --include "/opt/Xilinx/Vivado/2017.4/data/xilinx_vip/include" \
+"../../../../../rtl/mmcm/mmcm_clk_wiz.v" \
+"../../../../../rtl/mmcm/mmcm.v" \
+"../../../../lowrisc_ibex_kc705.ip_user_files/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" \
+"../../../../../rtl/micro_uart/hdl/micro_uart3.v" \
+"../../../../../rtl/micro_uart/hdl/micro_uart3_apb.v" \
+
+sv xil_defaultlib  -i "../../../../" --include "../../../../../rtl/mmcm" --include "/opt/Xilinx/Vivado/2017.4/data/xilinx_vip/include" \
+"../../../../../rtl/apb_gpio/rtl/apb_gpio.sv" \
+"../../../../../rtl/apb_channel/apb_node.sv" \
+"../../../../../rtl/apb_channel/apb_node_wrap.sv" \
+"../../../../../rtl/apb_timer/apb_timer.sv" \
+"../../../../../rtl/clkdivider.sv" \
+"../../../../../rtl/clkgen_xil7series.sv" \
+"../../../../../rtl/complex_core.sv" \
+"../../../../../rtl/data_ram.sv" \
+"../../../../../rtl/hold.sv" \
+"../../../../../rtl/ibex_pkg.sv" \
+"../../../../../rtl/ibex_alu.sv" \
+"../../../../../rtl/ibex_compressed_decoder.sv" \
+"../../../../../rtl/ibex_controller.sv" \
+"../../../../../rtl/ibex_core.sv" \
+"../../../../../rtl/ibex_cs_registers.sv" \
+"../../../../../rtl/ibex_decoder.sv" \
+"../../../../../rtl/ibex_ex_block.sv" \
+"../../../../../rtl/ibex_fetch_fifo.sv" \
+"../../../../../rtl/ibex_id_stage.sv" \
+"../../../../../rtl/ibex_if_stage.sv" \
+"../../../../../rtl/ibex_load_store_unit.sv" \
+"../../../../../rtl/ibex_multdiv_fast.sv" \
+"../../../../../rtl/ibex_multdiv_slow.sv" \
+"../../../../../rtl/ibex_pmp.sv" \
+"../../../../../rtl/ibex_prefetch_buffer.sv" \
+"../../../../../rtl/ibex_register_file_ff.sv" \
+"../../../../../rtl/interfaces/interface.sv" \
+"../../../../../rtl/lint_bridge/lint_2_apb.sv" \
+"../../../../../rtl/apb_channel/periph_bus_wrap.sv" \
+"../../../../../rtl/peripherals.sv" \
+"../../../../../rtl/prim_clock_gating.sv" \
+"../../../../../rtl/ram_1p.sv" \
+"../../../../../rtl/apb_timer/timer.sv" \
+"../../../../../rtl/top_artya7_100.sv" \
+"../../../../../testbench/tb_top_fpga.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,81 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  -i "../../../../" --include "../../../../lowrisc_ibex_kc705.srcs/sources_1/bd/design_1/ipshared/4868" --include "../../../../lowrisc_ibex_kc705.srcs/sources_1/bd/design_1/ipshared/02c8/hdl/verilog" --include "../../../../lowrisc_ibex_kc705.srcs/sources_1/bd/design_1/ipshared/e2dd/hdl/verilog" --include "../../../../../rtl/mmcm" --include "../../../../lowrisc_ibex_kc705.srcs/sources_1/ip/mmcm_n4ddr" --include "/home/fitz/.Xilinx/Vivado/2017.4/data/xilinx_vip/include" \
+"../../../../lowrisc_ibex_kc705.ip_user_files/ip/mmcm_n4ddr/mmcm_n4ddr_clk_wiz.v" \
+"../../../../lowrisc_ibex_kc705.ip_user_files/ip/mmcm_n4ddr/mmcm_n4ddr.v" \
+"../../../../lowrisc_ibex_kc705.ip_user_files/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" \
+"../../../../../rtl/adv_dbg_if/rtl/adbg_crc32.v" \
+"../../../../../rtl/micro_uart/hdl/micro_uart3.v" \
+"../../../../../rtl/micro_uart/hdl/micro_uart3_apb.v" \
+"../../../../../rtl/jtag_pulp/src/tap_top.v" \
+
+sv xil_defaultlib  -i "../../../../" --include "../../../../lowrisc_ibex_kc705.srcs/sources_1/bd/design_1/ipshared/4868" --include "../../../../lowrisc_ibex_kc705.srcs/sources_1/bd/design_1/ipshared/02c8/hdl/verilog" --include "../../../../lowrisc_ibex_kc705.srcs/sources_1/bd/design_1/ipshared/e2dd/hdl/verilog" --include "../../../../../rtl/mmcm" --include "../../../../lowrisc_ibex_kc705.srcs/sources_1/ip/mmcm_n4ddr" --include "/home/fitz/.Xilinx/Vivado/2017.4/data/xilinx_vip/include" \
+"../../../../../rtl/adv_dbg_if/rtl/adbg_lint_biu.sv" \
+"../../../../../rtl/adv_dbg_if/rtl/adbg_lint_module.sv" \
+"../../../../../rtl/adv_dbg_if/rtl/adbg_lintonly_top.sv" \
+"../../../../../rtl/apb2per/apb2per.sv" \
+"../../../../../rtl/apb_gpio/rtl/apb_gpio.sv" \
+"../../../../../rtl/apb_channel/apb_node.sv" \
+"../../../../../rtl/apb_channel/apb_node_wrap.sv" \
+"../../../../../rtl/apb_soc_ctrl.sv" \
+"../../../../../rtl/apb_timer/apb_timer.sv" \
+"../../../../../rtl/jtag_pulp/src/bscell.sv" \
+"../../../../../rtl/common_cells/src/cdc_2phase.sv" \
+"../../../../../rtl/clk_rst_n4ddr.sv" \
+"../../../../../rtl/clkdivider.sv" \
+"../../../../../rtl/tech_cells_generic/src/deprecated/cluster_clk_cells_xilinx.sv" \
+"../../../../../rtl/data_ram.sv" \
+"../../../../../rtl/riscv_dbg/src/dm_pkg.sv" \
+"../../../../../rtl/debug_domain.sv" \
+"../../../../../rtl/riscv_dbg/debug_rom/debug_rom.sv" \
+"../../../../../rtl/riscv_dbg/src/dm_csrs.sv" \
+"../../../../../rtl/riscv_dbg/src/dm_mem.sv" \
+"../../../../../rtl/riscv_dbg/src/dm_sba.sv" \
+"../../../../../rtl/riscv_dbg/src/dm_top.sv" \
+"../../../../../rtl/dm_wallpaper.sv" \
+"../../../../../rtl/riscv_dbg/src/dmi_cdc.sv" \
+"../../../../../rtl/riscv_dbg/src/dmi_jtag.sv" \
+"../../../../../rtl/riscv_dbg/src/dmi_jtag_tap.sv" \
+"../../../../../rtl/common_cells/src/deprecated/fifo_v2.sv" \
+"../../../../../rtl/common_cells/src/fifo_v3.sv" \
+"../../../../../rtl/hold.sv" \
+"../../../../../rtl/ibex_pkg.sv" \
+"../../../../../rtl/ibex_alu.sv" \
+"../../../../../rtl/ibex_compressed_decoder.sv" \
+"../../../../../rtl/ibex_controller.sv" \
+"../../../../../rtl/ibex_core.sv" \
+"../../../../../rtl/ibex_cs_registers.sv" \
+"../../../../../rtl/ibex_decoder.sv" \
+"../../../../../rtl/ibex_ex_block.sv" \
+"../../../../../rtl/ibex_fetch_fifo.sv" \
+"../../../../../rtl/ibex_id_stage.sv" \
+"../../../../../rtl/ibex_if_stage.sv" \
+"../../../../../rtl/ibex_load_store_unit.sv" \
+"../../../../../rtl/ibex_multdiv_fast.sv" \
+"../../../../../rtl/ibex_multdiv_slow.sv" \
+"../../../../../rtl/ibex_pmp.sv" \
+"../../../../../rtl/ibex_prefetch_buffer.sv" \
+"../../../../../rtl/ibex_register_file_ff.sv" \
+"../../../../../rtl/interfaces/interface.sv" \
+"../../../../../rtl/jtag_pulp/src/jtag_sync.sv" \
+"../../../../../rtl/jtag_tap_top.sv" \
+"../../../../../rtl/jtag_pulp/src/jtagreg.sv" \
+"../../../../../rtl/lint_bridge/lint_2_apb.sv" \
+"../../../../../rtl/lint_jtag_wrap.sv" \
+"../../../../../rtl/lint_bridge/lint_slice.sv" \
+"../../../../../rtl/n4ddr_top.sv" \
+"../../../../../rtl/apb_channel/periph_bus_wrap.sv" \
+"../../../../../rtl/peripherals.sv" \
+"../../../../../rtl/prim_clock_gating.sv" \
+"../../../../../rtl/ram_1p.sv" \
+"../../../../../rtl/soc_interconnect_wrap.sv" \
+"../../../../../rtl/soc_top.sv" \
+"../../../../../rtl/sram.sv" \
+"../../../../../rtl/tcdm_arbiter_2x1.sv" \
+"../../../../../rtl/apb_timer/timer.sv" \
+"../../../../../testbench/tb_n4ddr_top.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

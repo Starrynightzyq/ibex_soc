@@ -10,7 +10,13 @@ module top_fpga (
     input               IO_RST_P,
 
     (*mark_debug ="true"*)input  logic        uart_rx_i,
-    (*mark_debug ="true"*)output logic        uart_tx_o
+    (*mark_debug ="true"*)output logic        uart_tx_o,
+
+    input  logic                          jtag_tck,
+    input  logic                          jtag_trst_n,
+    input  logic                          jtag_tms,
+    input  logic                          jtag_tdi,
+    output logic                          jtag_tdo
 );
 
   // parameter int          MEM_SIZE  = 64 * 1024; // 64 kB
@@ -30,6 +36,15 @@ module top_fpga (
   logic        peri_rvalid;
   logic [31:0] peri_rdata;
 
+  // interrupt signals
+  logic irq_timer;
+  logic irq_external;
+
+  // debug bus
+  APB_BUS apb_debug_bus();
+  XBAR_TCDM_BUS lint_debug_bus();
+  logic debug_req;
+
   complex_core inst_complex_core
     (
       .clk         (clk_sys),
@@ -43,7 +58,14 @@ module top_fpga (
       .peri_gnt    (peri_gnt),
       
       .peri_rvalid (peri_rvalid),
-      .peri_rdata  (peri_rdata)
+      .peri_rdata  (peri_rdata),
+
+      .irq_software_i('b0),
+      .irq_timer_i   ('b0),
+      .irq_external_i(irq_external),
+      .irq_fast_i    ('b0),
+      .irq_nm_i      ('b0),
+      .debug_req_i   (debug_req)
     );
 
   peripherals inst_peripherals
@@ -63,9 +85,35 @@ module top_fpga (
       .peri_rvalid (peri_rvalid),
       .peri_rdata  (peri_rdata),
 
+      .debug_master  (apb_debug_bus),
+
+      .irq_timer_o   (irq_timer),
+      .irq_external_o(irq_external),
+
       // uart
       .uart_0_rx_i(uart_rx_i),
       .uart_0_tx_o(uart_tx_o)
+    );
+
+  debug_domain inst_debug_domain
+    (
+      .clk              (clk_sys),
+      .rst_n            (rst_sys_n),
+      
+      .s_apb_debug_bus  (apb_debug_bus),
+      .m_lint_debug_bus (lint_debug_bus),
+
+      .debug_req_o      (debug_req),
+      
+      .soc_jtag_reg_i   (soc_jtag_reg_i),
+      .soc_jtag_reg_o   (soc_jtag_reg_o),
+      .sel_fll_clk_o    (sel_fll_clk_o),
+
+      .jtag_tck_i       (jtag_tck),
+      .jtag_trst_ni     (jtag_trst_n),
+      .jtag_tms_i       (jtag_tms),
+      .jtag_tdi_i       (jtag_tdi),
+      .jtag_tdo_o       (jtag_tdo)
     );
 
   // Clock and reset

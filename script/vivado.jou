@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Dec  3 15:37:53 2019
+# Process ID: 31289
+# Current directory: /home/fitz/FPGA/PROJ/lowrisc/hardware/ibex_simple_soc/script
+# Command line: vivado -mode batch -source ./vivado.tcl
+# Log file: /home/fitz/FPGA/PROJ/lowrisc/hardware/ibex_simple_soc/script/vivado.log
+# Journal file: /home/fitz/FPGA/PROJ/lowrisc/hardware/ibex_simple_soc/script/vivado.jou
+#-----------------------------------------------------------
+source ./vivado.tcl
+create_project -in_memory generateNetlistIP -part xc7k325tffg900-2
+set_property BOARD_PART xilinx.com:kc705:part0:1.5 [current_project]
+read_ip /home/fitz/FPGA/PROJ/lowrisc/hardware/ibex_simple_soc/rtl/mmcm/mmcm.xci

@@ -1,0 +1,19 @@
+verilog xil_defaultlib --include "../../../../lowrisc_ibex_kc705.srcs/sources_1/bd/design_1/ipshared/4868" --include "../../../../lowrisc_ibex_kc705.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" \
+"../../../bd/design_1/ip/design_1_ibex_core_axi_wallpaper_0_0/sim/design_1_ibex_core_axi_wallpaper_0_0.v" \
+"../../../bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0_clk_wiz.v" \
+"../../../bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0.v" \
+"../../../bd/design_1/ip/design_1_xlconstant_0_0/sim/design_1_xlconstant_0_0.v" \
+"../../../bd/design_1/ip/design_1_xlconstant_0_1/sim/design_1_xlconstant_0_1.v" \
+"../../../bd/design_1/ip/design_1_axi_bram_ctrl_0_bram_0/sim/design_1_axi_bram_ctrl_0_bram_0.v" \
+"../../../bd/design_1/ip/design_1_ram_axi2_wallpaper_0_0/sim/design_1_ram_axi2_wallpaper_0_0.v" \
+"../../../bd/design_1/ip/design_1_blk_mem_gen_0_0/sim/design_1_blk_mem_gen_0_0.v" \
+"../../../bd/design_1/ip/design_1_xbar_0/sim/design_1_xbar_0.v" \
+"../../../bd/design_1/ip/design_1_xlconcat_0_0/sim/design_1_xlconcat_0_0.v" \
+"../../../bd/design_1/ip/design_1_auto_pc_2/sim/design_1_auto_pc_2.v" \
+"../../../bd/design_1/ip/design_1_auto_pc_1/sim/design_1_auto_pc_1.v" \
+"../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
+"../../../bd/design_1/sim/design_1.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

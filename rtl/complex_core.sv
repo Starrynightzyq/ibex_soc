@@ -2,20 +2,30 @@
 `include "memory_map_defines.sv"
 
 module complex_core (
-	input clk,    // Clock
-	(*mark_debug ="true"*)input rst_n,  // Asynchronous reset active low
+    input clk,    // Clock
+    (*mark_debug ="true"*)input rst_n,  // Asynchronous reset active low
 
-	// On-Chip Peripherals arbiter
-	output logic [31:0] peri_addr,
-	output logic        peri_req,
-	output logic        peri_write,
-	output logic  [3:0] peri_be,
-	output logic [31:0] peri_wdata,
-	input  logic        peri_gnt,
+    // On-Chip Peripherals arbiter
+    output logic [31:0] peri_addr,
+    output logic        peri_req,
+    output logic        peri_write,
+    output logic  [3:0] peri_be,
+    output logic [31:0] peri_wdata,
+    input  logic        peri_gnt,
 
-	input  logic        peri_rvalid,
-	input  logic [31:0] peri_rdata
-	
+    input  logic        peri_rvalid,
+    input  logic [31:0] peri_rdata,
+
+    // Interrupt inputs
+    input  logic        irq_software_i,
+    input  logic        irq_timer_i,
+    input  logic        irq_external_i,
+    input  logic [14:0] irq_fast_i,
+    input  logic        irq_nm_i,       // non-maskeable interrupt
+
+    // Debug Interface
+    XBAR_TCDM_BUS.Slave s_lint_debug_bus,
+    input  logic        debug_req_i
 );
 
   // Instruction connection to SRAM
@@ -94,13 +104,13 @@ module complex_core (
      .data_rdata_i          (data_rdata),
      .data_err_i            ('b0),
 
-     .irq_software_i        (1'b0),
-     .irq_timer_i           (1'b0),
-     .irq_external_i        (1'b0),
-     .irq_fast_i            (15'b0),
-     .irq_nm_i              (1'b0),
+     .irq_software_i        (irq_software_i),
+     .irq_timer_i           (irq_timer_i),
+     .irq_external_i        (irq_external_i),
+     .irq_fast_i            (irq_fast_i),
+     .irq_nm_i              (irq_nm_i),
 
-     .debug_req_i           ('b0),
+     .debug_req_i           (debug_req_i),
 
      .fetch_enable_i        ('b1),
      .core_sleep_o          ()

@@ -1,0 +1,57 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
+| Date         : Sun Mar 29 16:40:37 2020
+| Host         : fitz-MS-7B00 running 64-bit Ubuntu 18.04.4 LTS
+| Command      : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+| Design       : design_1_wrapper
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 4
++-----------+----------+-------------------------------------------------+------------+
+| Rule      | Severity | Description                                     | Violations |
++-----------+----------+-------------------------------------------------+------------+
+| CKLD-1    | Warning  | Clock Net has non-BUF driver and too many loads | 1          |
+| TIMING-6  | Warning  | No common primary clock between related clocks  | 2          |
+| TIMING-14 | Warning  | LUT on the clock tree                           | 1          |
++-----------+----------+-------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CKLD-1#1 Warning
+Clock Net has non-BUF driver and too many loads  
+Clock net design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/cs_registers_i/clk is not driven by a Clock Buffer and has more than 512 loads. Driver(s): design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/cs_registers_i/valid_q[2]_i_2/O
+Related violations: <none>
+
+TIMING-6#1 Warning
+No common primary clock between related clocks  
+The clocks clk_out1_design_1_clk_wiz_0 and clk_out1_design_1_clk_wiz_0_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_design_1_clk_wiz_0] -to [get_clocks clk_out1_design_1_clk_wiz_0_1]
+Related violations: <none>
+
+TIMING-6#2 Warning
+No common primary clock between related clocks  
+The clocks clk_out1_design_1_clk_wiz_0_1 and clk_out1_design_1_clk_wiz_0 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_design_1_clk_wiz_0_1] -to [get_clocks clk_out1_design_1_clk_wiz_0]
+Related violations: <none>
+
+TIMING-14#1 Warning
+LUT on the clock tree  
+The LUT design_1_i/ibex_core_axi_wallpaper_0/inst/inst_ibex_core/cs_registers_i/valid_q[2]_i_2 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+

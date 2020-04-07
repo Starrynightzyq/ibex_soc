@@ -8,15 +8,17 @@ module peripherals (
 	input rst_n,  // Asynchronous reset active low
 	
 	// On-Chip Peripherals arbiter
-	input  logic [31:0] peri_addr,
-	input  logic        peri_req,
-	input  logic        peri_write,
-	input  logic  [3:0] peri_be,
-	input  logic [31:0] peri_wdata,
-	output logic        peri_gnt,
+	XBAR_TCDM_BUS.Slave peri_bus,
 
-	output logic        peri_rvalid,
-	output logic [31:0] peri_rdata,
+	// debug apb master
+    APB_BUS.Master debug_master,
+    input logic sel_fll_clk_i,
+    input  logic [7:0] soc_jtag_reg_i,
+    output logic [7:0] soc_jtag_reg_o,
+
+    // Interrupt outputs
+    output  logic       irq_timer_o,
+    output  logic       irq_external_o,
 
 	input  logic        uart_0_rx_i,
 	output logic        uart_0_tx_o
@@ -27,33 +29,19 @@ module peripherals (
     parameter BE_WIDTH       = DATA_WIDTH/8;
     parameter ID_WIDTH       = 10;
     parameter AUX_WIDTH      = 8;
-/*
-    logic [ADDR_WIDTH-1:0]     core_apb_PADDR;
-    logic [DATA_WIDTH-1:0]     core_apb_PWDATA;
-    logic                      core_apb_PWRITE;
-    logic                      core_apb_PSEL;
-    logic                      core_apb_PENABLE;
-    logic [DATA_WIDTH-1:0]     core_apb_PRDATA;
-    logic                      core_apb_PREADY;
-    logic                      core_apb_PSLVERR;
-
-	logic [ADDR_WIDTH-1:0]     master_0_PADDR  ;
-	logic [DATA_WIDTH-1:0]     master_0_PWDATA ;
-	logic                      master_0_PWRITE ;
-	logic                      master_0_PSEL   ;
-	logic                      master_0_PENABLE;
-	logic [DATA_WIDTH-1:0]     master_0_PRDATA ;
-	logic                      master_0_PREADY ;
-	logic                      master_0_PSLVERR;
-*/
 
 	APB_BUS core_data_bus();
 	APB_BUS gpio_apb_bus();
 	APB_BUS uart_apb_bus();
 	APB_BUS timer_apb_bus();
+    APB_BUS soc_ctrl_master();
 
 	(*mark_debug ="true"*)logic uart_0_irq;
-	(*mark_debug ="true"*)logic timer_0_irq;
+	(*mark_debug ="true"*)logic [3:0] timer_0_irq;
+	logic timer_0_irq_hold;
+
+	// irq signals
+	assign irq_external_o = timer_0_irq_hold;
 
 
 	lint_2_apb #(
@@ -67,18 +55,18 @@ module peripherals (
 			.rst_n          (rst_n),
 
 			// core data interface
-			.data_req_i     (peri_req),
-			.data_add_i     (peri_addr),
-			.data_wen_i     (peri_write),
-			.data_wdata_i   (peri_wdata),
-			.data_be_i      (peri_be),
+			.data_req_i     (peri_bus.req),
+			.data_add_i     (peri_bus.add),
+			.data_wen_i     (peri_bus.wen),
+			.data_wdata_i   (peri_bus.wdata),
+			.data_be_i      (peri_bus.be),
 			.data_aux_i     (),
 			.data_ID_i      (),
-			.data_gnt_o     (peri_gnt),
+			.data_gnt_o     (peri_bus.gnt),
 
-			.data_r_valid_o (peri_rvalid),
-			.data_r_rdata_o (peri_rdata),
-			.data_r_opc_o   (),
+			.data_r_valid_o (peri_bus.r_valid),
+			.data_r_rdata_o (peri_bus.r_rdata),
+			.data_r_opc_o   (peri_bus.gnt),
 			.data_r_aux_o   (),
 			.data_r_ID_o    (),
 
@@ -92,30 +80,7 @@ module peripherals (
 			.master_PREADY  (core_data_bus.pready),
 			.master_PSLVERR (core_data_bus.pslverr)
 		);
-/*
-	peripherals_interconnect inst_peripherals_interconnect
-		(
-			.clk              (clk),
-			.rst_n            (rst_n),
-			.slaver_PADDR     (core_apb_PADDR),
-			.slaver_PWDATA    (core_apb_PWDATA),
-			.slaver_PWRITE    (core_apb_PWRITE),
-			.slaver_PSEL      (core_apb_PSEL),
-			.slaver_PENABLE   (core_apb_PENABLE),
-			.slaver_PRDATA    (core_apb_PRDATA),
-			.slaver_PREADY    (core_apb_PREADY),
-			.slaver_PSLVERR   (core_apb_PSLVERR),
 
-			.master_0_PADDR   (master_0_PADDR),
-			.master_0_PWDATA  (master_0_PWDATA),
-			.master_0_PWRITE  (master_0_PWRITE),
-			.master_0_PSEL    (master_0_PSEL),
-			.master_0_PENABLE (master_0_PENABLE),
-			.master_0_PRDATA  (master_0_PRDATA),
-			.master_0_PREADY  (master_0_PREADY),
-			.master_0_PSLVERR (master_0_PSLVERR)
-		);
-*/
 	periph_bus_wrap #(
 			.APB_ADDR_WIDTH(ADDR_WIDTH),
 			.APB_DATA_WIDTH(DATA_WIDTH)
@@ -125,7 +90,9 @@ module peripherals (
 			.apb_slave    (core_data_bus),
 			.gpio_master  (gpio_apb_bus),
 			.uart_master  (uart_apb_bus),
-			.timer_master (timer_apb_bus)
+			.timer_master (timer_apb_bus),
+			.soc_ctrl_master(soc_ctrl_master),
+			.debug_master   (debug_master)
 		);
 
 
@@ -196,5 +163,54 @@ module peripherals (
 
 			.irq_o   (timer_0_irq)
 		);
+	hold #(
+			.HOLD_TIME(60)
+		) inst_hold (
+			.clk     (clk),
+			.rst_n   (rst_n),
+			.trick_i (timer_0_irq[1]),
+			.trick_o (timer_0_irq_hold)
+		);
+
+	apb_soc_ctrl #(
+		.APB_ADDR_WIDTH(),
+		.NB_CLUSTERS(),
+		.NB_CORES(),
+		.JTAG_REG_SIZE()
+	) inst_apb_soc_ctrl (
+		.HCLK                   (clk),
+		.HRESETn                (rst_n),
+
+		.PADDR                  (soc_ctrl_master.paddr),
+		.PWDATA                 (soc_ctrl_master.pwdata),
+		.PWRITE                 (soc_ctrl_master.pwrite),
+		.PSEL                   (soc_ctrl_master.psel),
+		.PENABLE                (soc_ctrl_master.penable),
+		.PRDATA                 (soc_ctrl_master.prdata),
+		.PREADY                 (soc_ctrl_master.pready),
+		.PSLVERR                (soc_ctrl_master.pslverr),
+
+		.sel_fll_clk_i          (sel_fll_clk_i),
+
+		.boot_l2_i              (boot_l2_i), /* no connect */
+		.bootsel_i              (bootsel_i), /* no connect */
+
+		.pad_cfg                (pad_cfg), /* no connect */
+		.pad_mux                (pad_mux), /* no connect */
+		
+		.soc_jtag_reg_i         (soc_jtag_reg_i),
+		.soc_jtag_reg_o         (soc_jtag_reg_o),
+
+		.fc_bootaddr_o          (fc_bootaddr_o), /* no connect */
+		.fc_fetchen_o           (fc_fetchen_o), /* no connect */
+		.sel_hyper_axi_o        (sel_hyper_axi_o), /* no connect */
+		.cluster_pow_o          (cluster_pow_o), /* no connect */
+		.cluster_byp_o          (cluster_byp_o), /* no connect */
+		.cluster_boot_addr_o    (cluster_boot_addr_o), /* no connect */
+		.cluster_fetch_enable_o (cluster_fetch_enable_o), /* no connect */
+		.cluster_rstn_o         (cluster_rstn_o), /* no connect */
+		.cluster_irq_o          (cluster_irq_o)  /* no connect */
+	);
+
 
 endmodule

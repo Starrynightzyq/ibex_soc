@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Mar 26 20:16:40 2020
+# Process ID: 8041
+# Current directory: /home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/sys_reset_n4ddr_synth_1
+# Command line: vivado -log sys_reset_n4ddr.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sys_reset_n4ddr.tcl
+# Log file: /home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/sys_reset_n4ddr_synth_1/sys_reset_n4ddr.vds
+# Journal file: /home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/sys_reset_n4ddr_synth_1/vivado.jou
+#-----------------------------------------------------------
+source sys_reset_n4ddr.tcl -notrace

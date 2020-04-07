@@ -1,6 +1,6 @@
 #########################################################################################################
-##	This is an example .gitignore file for Vivado, please treat it as an example as 
-##	it might not be complete. In addition, XAPP 1165 should be followed.
+##  This is an example .gitignore file for Vivado, please treat it as an example as 
+##  it might not be complete. In addition, XAPP 1165 should be followed.
 #########################################################################################################
 #########
 #Exclude all
@@ -8,54 +8,85 @@
 *
 !*/
 !.gitignore
-!README.md
+###########################################################################
+##  VIVADO
+###########################################################################
+#########
+#Source files:
+#########
+#Do NOT ignore VHDL, Verilog, block diagrams or EDIF files.
+!*.vhd
+!*.v
+!*.bd
+!*.edif
+#########
+#IP files
+#########
+#.xci: synthesis and implemented not possible - you need to return back to the previous version to generate output products
+#.xci + .dcp: implementation possible but not re-synthesis
+#*.xci(www.spiritconsortium.org)
+!*.xci
+#*.dcp(checkpoint files)
+!*.dcp
+!*.vds
+!*.pb
+#All bd comments and layout coordinates are stored within .ui
+!*.ui
+!*.ooc
+#########
+#System Generator
+#########
+!*.mdl
+!*.slx
+!*.bxml
+#########
+#Simulation logic analyzer
+#########
+!*.wcfg
+!*.coe
+#########
+#MIG
+#########
+!*.prj
+!*.mem
+#########
+#Project files
+#########
+#XPR  +  *.XML ? XPR (Files are merged into a single XPR file for 2014.1 version)
+#Do NOT ignore *.xpr files
+!*.xpr
+#Include *.xml files for 2013.4 or earlier version
+!*.xml
+#########
+#Constraint files
+#########
+#Do NOT ignore *.xdc files
+!*.xdc
+#########
+#TCL - files
+#########
+!*.tcl
+#########
+#Journal - files
+#########
+!*.jou
+#########
+#Reports
+#########
+!*.rpt
+!*.txt
+!*.vdi
+#########
+#C-files
+#########
+!*.c
+!*.h
+!*.elf
+!*.bmm
+!*.xmp
 
-# constraints
-!constraints/*.xdc
-
-# rtl
-!rtl/*.sv
-!rtl/*.v
-!rtl/mmcm/*.xci
-!rtl/lint_bridge/*.sv
-!rtl/lint_bridge/*.v
-!rtl/axi2apb/*.sv
-!rtl/axi2apb/*.v
-!rtl/apb_channel/*.sv
-!rtl/apb_channel/*.v
-!rtl/apb_gpio
-!rtl/apb_uart_sv
-!rtl/micro_uart
-!rtl/apb_timer
-
-# script
-!script/Makefile
-!script/vivado.tcl
-
-# software
-!software/led/*.S
-!software/led/*.c
-!software/led/*.ld
-!software/led/Makefile
-
-!software/gpio/*.S
-!software/gpio/*.c
-!software/gpio/*.ld
-!software/gpio/Makefile
-
-!software/uart/*.S
-!software/uart/*.c
-!software/uart/*.ld
-!software/uart/Makefile
-
-!software/timer/*.S
-!software/timer/*.c
-!software/timer/*.ld
-!software/timer/Makefile
-
-# testbench
-!testbench/*.sv
-!testbench/*.v
-
-# vivado_build
-vivado_build/
+#########
+#software
+#########
+!*.S
+!*.ld

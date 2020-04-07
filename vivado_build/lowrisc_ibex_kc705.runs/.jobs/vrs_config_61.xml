@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="design_1_ibex_core_axi_wallpaper_0_0_synth_1" LaunchDir="/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/design_1_ibex_core_axi_wallpaper_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_clk_wiz_0_synth_1" LaunchDir="/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/design_1_clk_wiz_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_rst_clk_wiz_100M_0_synth_1" LaunchDir="/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/design_1_rst_clk_wiz_100M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_axi_bram_ctrl_0_0_synth_1" LaunchDir="/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/design_1_axi_bram_ctrl_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_xlconstant_0_0_synth_1" LaunchDir="/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/design_1_xlconstant_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_xlconstant_0_1_synth_1" LaunchDir="/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/design_1_xlconstant_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_axi_bram_ctrl_0_bram_0_synth_1" LaunchDir="/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/design_1_axi_bram_ctrl_0_bram_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_axi_uartlite_0_1_synth_1" LaunchDir="/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/design_1_axi_uartlite_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_axi_gpio_0_1_synth_1" LaunchDir="/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/design_1_axi_gpio_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_ram_axi2_wallpaper_0_0_synth_1" LaunchDir="/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/design_1_ram_axi2_wallpaper_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_axi_smc_2_synth_1" LaunchDir="/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/design_1_axi_smc_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_axi_smc_1_1_synth_1" LaunchDir="/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/design_1_axi_smc_1_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_blk_mem_gen_0_0_synth_1" LaunchDir="/home/fitz/FPGA/Project/ibex_soc/vivado_build/lowrisc_ibex_kc705.runs/design_1_blk_mem_gen_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+
