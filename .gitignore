@@ -94,4 +94,12 @@
 #########
 #ignore tools
 #########
+!riscv-tools/
 riscv-tools/*
+
+!doc/
+
+!*.bat
+!*.mmi
+!Makefile
+!README.md
